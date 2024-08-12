@@ -1,0 +1,37 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" data-rule="required" class="form-control" name="row[uid]" type="number" value="{$row.uid|htmlentities}" style="cursor: default;" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Study_taskid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-study_taskid" data-rule="required" class="form-control" name="row[study_taskid]" type="number" value="{$row.study_taskid|htmlentities}" style="cursor: default;" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Code_task')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-code_task" data-rule="required" class="form-control " rows="5" name="row[code_task]" cols="50" style="cursor: default;" disabled>{$row.code_task|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Done')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {if condition="$row.done==0"}
+            <input id="c-done" data-rule="required" class="form-control" name="row[done]" type="text" value="未完成" style="cursor: default;" disabled>
+            {else}
+            <input id="c-done" data-rule="required" class="form-control" name="row[done]" type="text" value="已完成" style="cursor: default;" disabled>
+            {/if}
+        </div>
+    </div>
+    <!--div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div-->
+</form>

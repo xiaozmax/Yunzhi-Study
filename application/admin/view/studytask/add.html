@@ -1,0 +1,40 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-title" data-rule="required" class="form-control " rows="5" name="row[title]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ans')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-ans" data-rule="required" class="form-control " rows="5" name="row[ans]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Class_id'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-classid" class="form-control" name="row[class_id]">
+                <!-- 这里应该是从数据库中获取年级数据并生成下拉选项 -->
+                <?php foreach ($groupId as$key => $groupIds): ?>
+                <option value="<?php echo $groupIds; ?>">
+                <?php echo $groupList[$key]; ?>
+                </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div> 
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>

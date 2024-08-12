@@ -1,0 +1,31 @@
+@import url(./bootstrap5.3.0.min.css);
+
+.nav-item {
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #6c9cd3e7;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #6c9cd3e7;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-img {
+    /* 替换为您的图片URL */
+    background-attachment: fixed;
+    /* 这使得背景图片固定不动 */
+    background-size: cover;
+    /* 这使得背景图片覆盖整个容器 */
+    background-position: center right;
+    /* 这使得背景图片居中 */
+    background-repeat: no-repeat;
+}

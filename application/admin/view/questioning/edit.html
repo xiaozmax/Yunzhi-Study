@@ -1,0 +1,84 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Uid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-uid" data-rule="required" class="form-control" name="row[uid]" type="number"
+                value="{$row.uid|htmlentities}" style="cursor: default;" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" data-rule="required" class="form-control" rows="5" name="row[content]"
+                cols="50" style="width: 100%;height: 30vh;cursor: default;" disabled>{$row.content|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">提问代码内容</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-code" data-rule="required" class="form-control" rows="5" name="record[code]" cols="50"
+                style="height:30vh;font-size: medium;cursor: default;" disabled>{$record.code|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">代码运行结果</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-output" data-rule="required" class="form-control" rows="5" name="record[output]" cols="50"
+                style="height:30vh;font-size: medium;cursor: default;" disabled>{$record.output|htmlentities}</textarea>
+        </div>
+    </div>
+    <!-- 在视图中显示studytask的title、content和ans -->
+    <?php if (!empty($studyTask)): ?>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">学习任务标题:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" readonly value="<?php echo $studyTask['title']; ?>" style="cursor: default;" disabled />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">学习任务内容:</label>
+        <div class="col-xs-12 col-sm-8">
+            <!-- 使用一个隐藏的textarea来存储转义后的HTML内容 -->
+            <textarea id="studytask-content" class="form-control" readonly
+                style="display:none;"><?php echo htmlspecialchars($studyTask['content']); ?></textarea>
+            <!-- 创建一个div来展示实际的HTML内容，并添加边框样式 -->
+            <div id="studytask-content-html" style="border: 1px solid #ccc; padding: 10px; margin-top: 5px;"></div>
+        </div>
+    </div>
+
+    <script>
+        // 页面加载完毕后，将textarea中的内容设置为div的HTML
+        document.addEventListener('DOMContentLoaded', function () {
+            var studyTaskContent = document.getElementById('studytask-content').value;
+            document.getElementById('studytask-content-html').innerHTML = studyTaskContent;
+        });
+    </script>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">学习任务答案:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input type="text" class="form-control" readonly value="<?php echo $studyTask['ans']; ?>" />
+        </div>
+    </div>
+    <?php else: ?>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">学习任务信息:</label>
+        <div class="col-xs-12 col-sm-8">
+            <p>没有找到对应的学习任务信息。</p>
+        </div>
+    </div>
+    <?php endif; ?>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Reply_content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-reply_content" class="form-control editor" rows="5" name="row[reply_content]"
+                cols="50">{$row.reply_content|htmlentities}</textarea>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>

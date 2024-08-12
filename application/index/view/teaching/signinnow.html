@@ -1,0 +1,116 @@
+<!-- 在表格的 <style> 标签中添加 CSS -->
+    <style>
+        .table th, .table td {
+            white-space: nowrap; /* 防止文本换行 */
+            text-overflow: ellipsis; /* 超出部分显示省略号 */
+            overflow: hidden; /* 隐藏超出部分 */
+            max-width: 150px; /* 设置最大宽度，可以根据需要调整 */
+        }
+        
+        /* 如果您想要在较小的屏幕上调整表格布局 */
+        @media (max-width: 768px) {
+            .table th, .table td {
+                max-width: 100px; /* 在小屏幕上减少最大宽度 */
+            }
+        }
+    </style>
+    
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {include file="common/sidenav" /}
+        </div><!--列表-->
+        <div class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="page-header">
+                        {:__('attendance')}
+                        <a href="{:url('teaching/signinlist')}" class="btn btn-primary pull-right">返回签到列表</a>
+                    </h2>
+                    <!-- 添加一个不可见的元素来存储用户 ID -->
+                    <span id="userId" style="display:none;">{$user.id}</span>
+                    <div class="row user-baseinfo">
+                        {if condition="$can_signin != 0"}
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <h3><strong>签到名称：</strong>{$signin_name}</h3>
+                                <h3><strong>起始时间：</strong>{$start_time}</h3>
+                                <h3><strong>结束时间：</strong>{$end_time}</h3>
+                                {if condition="$signin_type == 'on'"}
+                                <h3><strong>目前状态：</strong>正在进行</h3>
+                                {elseif condition="$signin_type == 'ended'"}
+                                <h3><strong>目前状态：</strong>已结束</h3>
+                                {else}
+                                <h3><strong>目前状态：</strong>未开始</h3>
+                                {/if}
+                                {if condition="$signin_type != 'waiting'"}
+                                {if condition="$user_type == 1"}
+                                <h3><strong>签到状态：</strong>已签到</h3>
+                                {else}<h3><strong>签到状态：</strong>未签到</h3>
+                                {/if}
+                                {/if}
+                            </table>
+                        </div>
+                        {if condition="$signin_type == 'on'"}
+                        {if condition="$user_type != 1"}
+                        <button id="signinButton">签到</button>
+                        <script>
+                        // 获取按钮元素
+                            var signinButton = document.getElementById('signinButton');
+                            
+                            // 绑定点击事件处理函数
+                            signinButton.addEventListener('click', function() {
+                                // 获取 URL 中的 signin_id 参数
+                                var signinId = window.location.search.match(/signin_id=([^&]+)/);
+                                if (signinId && signinId.length > 1) {
+                                    signinId = signinId[1];
+                                } else {
+                                    console.error('signin_id 参数未找到');
+                                    return;
+                                }
+                            
+                                // 创建一个 FormData 对象
+                                var formData = new FormData();
+                            
+                                // 添加 signin_id 参数到 FormData 对象
+                                formData.append('signin_id', signinId);
+                            
+                                // 发送 POST 请求
+                                fetch('/index/teaching/signinnow', {
+                                    method: 'POST',
+                                    body: formData
+                                })
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error('网络响应错误');
+                                    }
+                                    // 由于返回的数据是文本，不是 JSON，所以直接返回文本
+                                    return response.text();
+                                })
+                                .then(text => {
+                                    // 处理响应文本
+                                    console.log('签到响应：', text);
+                                    alert("签到结果：" + text);
+                                    location.reload();
+                                    // 根据响应文本更新页面或显示消息
+                                    // 例如，您可以使用 text 更新页面上的某个元素
+                                })
+                                .catch(error => {
+                                    // 处理请求错误
+                                    console.error('签到请求失败：', error);
+                                    alert("错误信息：" + text)
+                                });
+                            });
+                            
+                            </script>
+                            {/if}
+                            {/if}
+                        {else}
+                        <h1 style="color: red;">对不起，您没有权限进行本次签到</h1>
+                        {/if}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

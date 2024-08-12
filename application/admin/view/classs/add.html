@@ -1,0 +1,32 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Headteacher')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-headteacher" class="form-control " rows="5" name="row[headteacher]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Grade'); ?>:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-grade" class="form-control" name="row[grade]">
+                <!-- 这里应该是从数据库中获取年级数据并生成下拉选项 -->
+                <?php foreach ($gradeList as $gradeName): ?>
+                    <option value="<?php echo $gradeName; ?>"><?php echo $gradeName; ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div>    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>

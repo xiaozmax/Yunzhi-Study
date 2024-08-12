@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户签到记录</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>用户签到记录</h1>
+    <table id="recordTable">
+        <thead>
+            <tr>
+                <th>用户ID</th>
+                <th>姓名</th>
+                <th>签到时间</th>
+                <th>IP地址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 签到记录将在这里通过JavaScript动态插入 -->
+        </tbody>
+    </table>
+
+    <script>
+        // 获取URL中的id参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+
+        // 使用fetch API发送POST请求
+        window.onload = function() {
+            if (id) {
+                fetch('record', {
+                    method: 'POST',
+                    body: JSON.stringify({ id: id }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var table = document.getElementById('recordTable').getElementsByTagName('tbody')[0];
+
+                    data.forEach(function(record) {
+                        var row = table.insertRow(-1); // 在表格末尾插入一行
+                        var cell1 = row.insertCell(0);
+                        var cell2 = row.insertCell(1);
+                        var cell3 = row.insertCell(2);
+                        var cell4 = row.insertCell(3);
+
+                        cell1.innerHTML = record.uid;
+                        cell2.innerHTML = record.name;
+                        cell3.innerHTML = record.time;
+                        cell4.innerHTML = record.ip;
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+            } else {
+                console.error('ID parameter not found in URL');
+            }
+        };
+    </script>
+</body>
+</html>

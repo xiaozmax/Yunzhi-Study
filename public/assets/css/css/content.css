@@ -1,0 +1,94 @@
+.article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS样式表 */
+/* 更新后的CSS样式表 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 其他CSS样式不变 */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* 针对小屏幕设备的CSS样式 */
+    nav,
+    footer {
+        display: none;
+    }
+
+    .block {
+        width: 100%;
+        /* 在小屏幕上每行只显示一个板块 */
+    }
+}
+
+.block-container {
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: calc(25% - 2%);
+    /* 设置宽度为25%，并减去间距 */
+    margin: 1%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+    /* 相对定位 */
+    font-size: 1.3vw;
+    /* 使用vw单位来设置字体大小，根据窗口大小自适应 */
+}
+
+/* 让每个板块保持横竖4:3的比例 */
+.block:before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    /* 4:3的比例，可以调整成其他比例 */
+}
+
+.block img {
+    max-width: 100%;
+    max-height: 100%;
+    /* 图片最大高度100% */
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* 绝对定位 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

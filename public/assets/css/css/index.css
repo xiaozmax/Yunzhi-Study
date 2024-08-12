@@ -1,0 +1,19 @@
+.panel {
+    background-color: #6c9cd3;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.panel:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* 调整间距以适应小屏幕 */
+@media (max-width: 767px) {
+    .panel {
+        margin-bottom: 20px;
+    }
+}

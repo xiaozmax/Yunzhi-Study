@@ -1,0 +1,358 @@
+<style>
+    #ceditor {
+        height: 100vh;
+        /* 设置一个高度 */
+        width: 100%;
+        /* 设置一个宽度 */
+        border: 1px solid #ccc;
+        /* 添加一个边框以便可视化 */
+    }
+
+    #coderarea {
+        width: 70%;
+    }
+
+    #rightarea {
+        width: 30%;
+        float: right;
+    }
+
+    #outputarea {
+        width: 100%;
+        height: 50vh;
+        margin-top: 10%;
+    }
+
+    #outputdata {
+        width: 100%;
+        height: 40%;
+        overflow-y: auto;
+    }
+
+    #questionarea {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #questiondata {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    #aihelp {
+        width: 100%;
+        height: 100%;
+    }
+
+    #inputplace {
+        width: 100%;
+        height: 66%;
+    }
+</style>
+<div id="loadingOverlay"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(255, 255, 255, 0.95); z-index:1000;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);">
+        <center><img src="/assets/img/loading.gif" alt="加载中..." style="display:block; margin:0 auto;"></center>
+        <p style="text-align:center;">AI回答中，请稍等...</p>
+    </div>
+</div>
+<span id="study_task_id" style="display:none;">{$study_task_id}</span>
+<span id="done" style="display:none;">{$done}</span>
+<a href="/index/study/index.html">返回任务中心</a>
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default" style="height: 200%;">
+                <h2 class="page-header">
+                    {$study_task_name}
+                </h2>
+                <div id="rightarea">
+                    <div id="questionarea">
+                        <h1>题目信息</h1>
+                        <div id="questiondata">
+                            <p>{$study_task_content}</p>
+                        </div>
+                        {if condition="$output != ''"}
+                        <h1>输出信息</h1>
+                        <div id="outputdata">
+                            <a>{$output}</a>
+                        </div>
+                        <h1>任务状态：<h1>
+                                {if condition="$done == 1"}
+                                <h1>已完成</h1>
+                                {else}
+                                <h1>未完成</h1>
+                                {/if}
+                                {/if}
+                    </div>
+
+                </div>
+                <div class="panel-body" id="coderarea">
+                    <div id="ceditor" class="ceditor">{$code}</div>
+                    <a id="code_task_id" style="display: none;">{$code_task_id}</a>
+                    <button class="btn btn-default" onclick="increaseFontSize()">增大字体</button>
+                    <button class="btn btn-default" onclick="decreaseFontSize()">减小字体</button>
+                    <button class="btn btn-default" id="toggleFullScreen">切换全屏</button>
+                    <div class="row mt-2">
+                        <div class="col-md-12 text-end">
+                            {if condition="$done == 0"}
+                            <button class="btn btn-primary" onclick="submitCode()">提交编译</button>
+                            {/if}
+                        </div>
+                    </div>
+                    <!-- 添加一个下拉列表用于切换语言 
+                    <div class="form-group">
+                        <label class="control-label">选择语言</label>
+                        <select class="form-control selectpicker" id="language-selector">
+                            <option value="python">Python</option>
+                            <option value="c_cpp">C/C++</option>
+                        </select>
+                    </div>-->
+
+                </div>
+                {if condition="$openuse"}
+                {if condition="$code != ''"}
+                <div id="aihelp">
+                    {if condition="$ai != ''"}
+                    <h1>AI帮助结果</h1>
+                    <pre><a style="font-size: 100%;" class="aisaid">{$ai}</a></pre>
+                    {else}
+                    <h1>有问题？让AI帮助您</h1>
+                    <!--<textarea id="inputplace"></textarea>-->
+                    <button class="btn btn-primary" onclick="AskAI()">一键询问AI</button>
+                    {/if}
+                    {if condition="$teacher"}
+                    <h1>教师回答</h1>
+                    <pre><a style="font-size: 100%;" class="aisaid">{$teacher}</a></pre>
+                    {else}
+                        <h1>向老师提问</h1>
+                        {if condition="$askedt"}
+                        <h2>老师正在回答，请等待！</h2>
+                        {else}
+                        <textarea id="inputplace"></textarea>
+                        <button class="btn btn-primary" onclick="AskT()">提交问题</button>
+                        {/if}
+                    {/if}
+                </div>
+                {/if}
+                {/if}
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/ace/1.4.6/ace.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/ext-beautify.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/ext-language_tools.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-javascript.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/theme-xcode.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-python.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-c_cpp.js"></script>
+
+<script>
+    var editor = ace.edit('ceditor');
+    //editor.setReadOnly(true);//只读模式
+    editor.setTheme('ace/theme/twilight');
+    var jsMode = ace.require('ace/mode/python').Mode;
+    editor.session.setMode(new jsMode());
+    function submitCode() {
+        var code = editor.getValue();
+        console.log(code);
+    }
+    function increaseFontSize() {
+        var size = editor.getFontSize(); // 获取当前字体大小
+        editor.setFontSize(size + 3); // 字体大小加1
+    }
+
+    // 减小字体大小
+    function decreaseFontSize() {
+        var size = editor.getFontSize(); // 获取当前字体大小
+        editor.setFontSize(size - 3); // 字体大小减1
+    }
+    function submitCode() {
+        var textarea = document.getElementById("inputplace");
+        var text = textarea.value;
+        let encodedCode = window.btoa(unescape(encodeURIComponent(text)));
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const recordid = urlParams.get('id'); // 假设URL的查询参数是?id=taskId的形式
+
+        // 如果taskid存在，则准备POST请求的数据
+        if (recordid) {
+            const data = new URLSearchParams({
+                'ask': encodedCode,
+                'recordid': recordid
+            });
+
+            // 显示加载图标
+            document.getElementById('loadingOverlay').style.display = 'block';
+
+            // 发送POST请求
+            fetch('/index/teaching/codertask', {
+                method: 'POST',
+                body: data
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text(); // 解析响应文本
+                })
+                .then(taskId => {
+                    // 获取返回的数字并跳转到新的URL
+                    window.location.href = '/index/teaching/codertask?id=' + recordid;
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                })
+                .finally(() => {
+                    // 隐藏加载图标
+                    document.getElementById('loadingOverlay').style.display = 'none';
+                });
+        } else {
+            console.error('taskid 参数未在URL中找到');
+        }
+    }
+
+    var toggleFullScreenButton = document.getElementById("toggleFullScreen");
+
+    // 为按钮添加点击事件监听器
+    toggleFullScreenButton.addEventListener("click", function () {
+        // 判断编辑器当前是否处于全屏模式
+        if (editor.isFullScreen) {
+            // 如果是全屏模式，退出全屏
+            editor.exitFullscreen();
+        } else {
+            // 如果不是全屏模式，进入全屏
+            editor.setOption("maxLines", Infinity); // 设置最大行数为无限，以允许编辑器高度扩展
+            editor.container.requestFullscreen(); // 使用HTML5全屏API请求全屏
+        }
+    });
+
+    function submitCode() {
+        var study_task_id = document.getElementById('study_task_id').textContent;
+        var code = editor.getValue();
+        //let selectedLanguage = document.getElementById('language-selector').value;
+        //let type = (selectedLanguage === 'python') ? 1 : 2;
+        let encodedCode = window.btoa(unescape(encodeURIComponent(code)));
+
+        // 准备POST请求的数据
+        const data = new URLSearchParams({
+            'code': encodedCode,
+            'type': 1,
+            'study_task_id': study_task_id
+        });
+
+        // 发送POST请求
+        fetch('/index/study/study_task_submit', {
+            method: 'POST',
+            body: data
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // 解析响应文本
+            })
+            .then(taskId => {
+                // 获取返回的数字并跳转到新的URL
+                window.location.href = "/index/study/page?study_task_id=" + study_task_id;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    }
+
+    function AskAI() {
+        var done = document.getElementById('done').textContent;
+        var study_task_id = document.getElementById('study_task_id').textContent;
+        //var textarea = document.getElementById("inputplace");
+        //var text = textarea.value;
+        //let encodedCode = window.btoa(unescape(encodeURIComponent(text)));
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const recordid = urlParams.get('id'); // 假设URL的查询参数是?id=taskId的形式
+
+        // 准备POST请求的数据
+        const data = new URLSearchParams({
+            //'ask': encodedCode,
+            'study_task_id': study_task_id,
+            'done': done
+        });
+
+        // 显示加载图标
+        document.getElementById('loadingOverlay').style.display = 'block';
+
+        // 发送POST请求
+        fetch('/index/study/askai', {
+            method: 'POST',
+            body: data
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // 解析响应文本
+            })
+            .then(taskId => {
+                // 获取返回的数字并跳转到新的URL
+                window.location.href = '/index/study/page?study_task_id=' + study_task_id;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            })
+            .finally(() => {
+                // 隐藏加载图标
+                document.getElementById('loadingOverlay').style.display = 'none';
+            });
+    }
+
+    function AskT() {
+        var done = document.getElementById('done').textContent;
+        var study_task_id = document.getElementById('study_task_id').textContent;
+        var code_task_id = document.getElementById('code_task_id').textContent;
+        var textarea = document.getElementById("inputplace");
+        var text = textarea.value;
+        let encodedCode = window.btoa(unescape(encodeURIComponent(text)));
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const recordid = urlParams.get('id'); // 假设URL的查询参数是?id=taskId的形式
+
+        // 准备POST请求的数据
+        const data = new URLSearchParams({
+            'ask': encodedCode,
+            'study_task_id': study_task_id,
+            'code_task_id' : code_task_id,
+            'done': done
+        });
+
+        // 显示加载图标
+        //document.getElementById('loadingOverlay').style.display = 'block';
+
+        // 发送POST请求
+        fetch('/index/study/askt', {
+            method: 'POST',
+            body: data
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // 解析响应文本
+            })
+            .then(taskId => {
+                // 获取返回的数字并跳转到新的URL
+                window.location.href = '/index/study/page?study_task_id=' + study_task_id;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            })
+            .finally(() => {
+                // 隐藏加载图标
+                //document.getElementById('loadingOverlay').style.display = 'none';
+            });
+    }
+</script>

@@ -1,0 +1,148 @@
+<!-- 在表格的 <style> 标签中添加 CSS -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<style>
+    #ceditor {
+        height: 50vh;
+        /* 设置一个高度 */
+        width: 100%;
+        /* 设置一个宽度 */
+        border: 1px solid #ccc;
+        /* 添加一个边框以便可视化 */
+    }
+</style>
+
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-3">
+            {include file="common/sidenav" /}
+        </div><!--列表-->
+        <div class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="ceditor" class="ceditor"></div>
+                    <button class="btn btn-default" onclick="increaseFontSize()">增大字体</button>
+                    <button class="btn btn-default" onclick="decreaseFontSize()">减小字体</button>
+                    <button class="btn btn-default" id="toggleFullScreen">切换全屏</button>
+                    <!-- 添加一个下拉列表用于切换语言 -->
+                    <!--<div class="form-group">
+                        <label class="control-label">选择语言</label>
+                        <select class="form-control selectpicker" id="language-selector">
+                            <option value="python">Python</option>
+                            <option value="c_cpp">C/C++</option>
+                        </select>
+                    </div>-->
+
+                    <div class="row mt-2">
+                        <div class="col-md-12 text-end">
+                            <button class="btn btn-primary" onclick="submitCode()">提交编译</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/ace/1.4.6/ace.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/ext-beautify.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/ext-language_tools.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-javascript.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/theme-xcode.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-python.js"></script>
+<script src="https://cdn.bootcss.com/ace/1.4.6/mode-c_cpp.js"></script>
+<script>
+    var editor = ace.edit('ceditor');
+    editor.setTheme('ace/theme/twilight');
+    editor.session.setMode('ace/mode/python');
+
+    // 监听下拉框的变更事件
+    /*document.getElementById('language-selector').addEventListener('change', function (event) {
+        var selectedLanguage = event.target.value;
+        switch (selectedLanguage) {
+            case 'python':
+                editor.session.setMode('ace/mode/python');
+                break;
+            case 'c_cpp':
+                editor.session.setMode('ace/mode/c_cpp');
+                break;
+        }
+    });*/
+
+    function submitCode() {
+        var code = editor.getValue();
+        //let selectedLanguage = document.getElementById('language-selector').value;
+        //let type = (selectedLanguage === 'python') ? 1 : 2;
+        let encodedCode = window.btoa(unescape(encodeURIComponent(code)));
+
+        // 准备POST请求的数据
+        const data = new URLSearchParams({
+            'code': encodedCode,
+            'type': 1
+        });
+
+        // 发送POST请求
+        fetch('/index/teaching/coder', {
+            method: 'POST',
+            body: data
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // 解析响应文本
+            })
+            .then(taskId => {
+                // 获取返回的数字并跳转到新的URL
+                window.location.href = `/index/teaching/codertask?id=${taskId}`;
+            })
+            .catch(error => {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    }
+
+    function increaseFontSize() {
+        var size = editor.getFontSize(); // 获取当前字体大小
+        editor.setFontSize(size + 3); // 字体大小加1
+    }
+
+    // 减小字体大小
+    function decreaseFontSize() {
+        var size = editor.getFontSize(); // 获取当前字体大小
+        editor.setFontSize(size - 3); // 字体大小减1
+    }
+
+    var toggleFullScreenButton = document.getElementById("toggleFullScreen");
+
+    // 为按钮添加点击事件监听器
+    toggleFullScreenButton.addEventListener("click", function () {
+        // 判断编辑器当前是否处于全屏模式
+        if (editor.isFullScreen) {
+            // 如果是全屏模式，退出全屏
+            editor.exitFullscreen();
+        } else {
+            // 如果不是全屏模式，进入全屏
+            editor.setOption("maxLines", Infinity); // 设置最大行数为无限，以允许编辑器高度扩展
+            editor.container.requestFullscreen(); // 使用HTML5全屏API请求全屏
+        }
+    });
+</script>
+
+
+
+<!--<script>
+    var editor = ace.edit('ceditor');
+    editor.setTheme('ace/theme/twilight');
+    var jsMode = ace.require('ace/mode/python').Mode;
+    editor.session.setMode(new jsMode());
+    function submitCode() {
+        var code = editor.getValue();
+        console.log(code);
+        let encodedcode = window.btoa(code);
+        console.log('t1', encodedcode);
+        // 这里可以添加代码提交的逻辑
+    }
+</script>-->

@@ -1,0 +1,70 @@
+.rounded-border-card {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.rounded-border-card:hover {
+    background-color: #6c9cd3;
+    color: #ffffff;
+}
+
+.rounded-border-card a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.rounded-border-card:hover a {
+    color: #ffffff; /* 您希望的悬停颜色 */
+}
+
+
+.article-item {
+    margin-bottom: 20px;
+}
+
+.article-item:last-child {
+    margin-bottom: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.pagination button.active {
+    background-color: #6c9cd3;
+    color: white;
+    border-color: #508cd1;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination button:disabled,
+.pagination button.disabled {
+    background-color: #ddd;
+    color: #ccc;
+    cursor: not-allowed;
+}

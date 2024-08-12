@@ -1,0 +1,7 @@
+网站文件请按照Thinkphp5.0/Fastadmin的方法部署，PHP版本建议PHP7.4
+数据库建议Mysql5.7
+数据库配置在application目录中的database.php进行设置
+特别鸣谢（不分先后）：
+Thinkphp（https://www.thinkphp.cn/）
+Fastadmin（https://doc.fastadmin.net/）
+Code-Server（https://github.com/coder/code-server）

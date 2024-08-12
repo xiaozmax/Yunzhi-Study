@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link rel="stylesheet" href="__CDN__/assets/css/css/common.css">
+    <link rel="stylesheet" href="__CDN__/assets/css/css/contentlist.css">
+    <title>内容中心</title>
+    <script>
+        window.onload = function () {
+            // 页面加载时获取文章列表和分类列表
+            getContentList();
+            getCategoryList();
+
+            // 处理分页点击事件
+            $(document).on('click', '.pagination a', function (e) {
+                e.preventDefault();
+                var pagenow = $(this).attr('data-page');
+                var categoryId = $('#categorySelect').val();
+                updateContentList(pagenow, categoryId);
+            });
+
+            // 处理分类选择更改事件
+            $(document).on('change', '#categorySelect', function () {
+                var categoryId = $(this).val();
+                getContentList(categoryId);
+            });
+        }
+
+        function getContentList(categoryId) {
+            $.ajax({
+                url: '{:url("index/contentlist")}',
+                type: 'POST',
+                data: { category: categoryId || '' },
+                dataType: 'json',
+                success: function (response) {
+                    updateContent(response);
+                }
+            });
+        }
+
+        function getCategoryList() {
+            $.ajax({
+                url: '{:url("index/get_category")}', // 假设这是获取分类的后端接口
+                type: 'GET',
+                dataType: 'json',
+                success: function (response) {
+                    var categoryHTML = '<option value="">所有分类</option>';
+                    $.each(response, function (index, category) {
+                        categoryHTML += '<option value="' + category.id + '">' + category.name + '</option>';
+                    });
+                    $('#categorySelect').html(categoryHTML);
+                }
+            });
+        }
+
+        function updateContentList(pagenow, categoryId) {
+            $.ajax({
+                url: '{:url("index/contentlist")}',
+                type: 'POST',
+                data: { pagenow: pagenow, category: categoryId },
+                dataType: 'json',
+                success: function (response) {
+                    updateContent(response);
+                }
+            });
+        }
+
+        function updateContent(data) {
+            var articlesHTML = '<div class="row">'; // 开始行
+            $.each(data.data, function (index, article) {
+                articlesHTML += '<div class="col-12 article-item">'; // 列布局，添加自定义类
+                articlesHTML += '<div class="card h-100 rounded-border-card">'; // 使用Bootstrap的card组件，并添加新类
+                articlesHTML += '<div class="card-body">'; // Card body
+                articlesHTML += '<a class="h5" id="articleLink-' + article.article_id + '">' + article.title + '</a>';
+                articlesHTML += '</div>';
+                articlesHTML += '</div>';
+                articlesHTML += '</div>'; // 结束列
+            });
+
+            $('#articleList').on('click', '.card', function () {
+                var articleId = $(this).find('.h5').attr('id').split('-')[1]; // 从ID中提取article_id
+                var targetUrl = '/index/index/content?id=' + articleId;
+                window.location.href = targetUrl; // 跳转到目标地址
+            });
+
+            articlesHTML += '</div>'; // 结束行
+            $('#articleList').html(articlesHTML);
+
+            // 更新分页按钮
+            updatePagination(data.current_page, data.last_page);
+        }
+
+
+
+
+        function updatePagination(currentPage, totalPages) {
+            var paginationHTML = '';
+            paginationHTML += '<button class="page-link' + (currentPage === 1 ? ' active' : '') + '" onclick="changePage(1)">首页</button>';
+            // 上一页按钮
+            if (currentPage > 1) {
+                paginationHTML += '<button class="page-link" onclick="changePage(' + (currentPage - 1) + ')">上一页</button>';
+            }
+            // 中间页码按钮
+            var startPage = Math.max(1, currentPage - 2);
+            var endPage = Math.min(startPage + 4, totalPages);
+            for (var i = startPage; i <= endPage; i++) {
+                paginationHTML += '<button class="page-link' + (currentPage === i ? ' active' : '') + '" onclick="changePage(' + i + ')">' + i + '</button>';
+            }
+            // 下一页按钮
+            if (currentPage < totalPages) {
+                paginationHTML += '<button class="page-link" onclick="changePage(' + (currentPage + 1) + ')">下一页</button>';
+            }
+            // 首页和尾页按钮
+            
+            paginationHTML += '<button class="page-link' + (currentPage === totalPages ? ' active' : '') + '" onclick="changePage(' + totalPages + ')">尾页</button>';
+
+            // 更新DOM
+            document.getElementById('pagination').innerHTML = paginationHTML;
+        }
+
+        function changePage(page) {
+            var categoryId = $('#categorySelect').val();
+            updateContentList(page, categoryId);
+        }
+
+    </script>
+</head>
+
+<body style="background-image: url('__CDN__/assets/img/page.png');" class="back-img">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ">{$site.name|htmlentities}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{:url('index/index')}">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{:url('index/contentlist')}">内容中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{:url('index/help')}">帮助中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="{:url('index/about')}">关于我们</a>
+                    </li>
+                </ul>
+                <!-- 将用户信息和登录/注册链接放在这里 -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- 使用 ms-auto 类来右对齐 -->
+                    {if condition="isset($user)"}
+                    <!-- 用户已登录，显示用户头像和ID -->
+                    <li class="">
+                        <a class="nav-link" href="{:url('user/index')}">
+                            <img src="{$user.avatar}" alt="用户头像" class="user-avatar rounded-circle me-2"
+                                style="width: 30px; height: 30px;">
+                            {$user.nickname}
+                        </a>
+                    </li>
+                    {else/}
+                    <!-- 用户未登录，显示登录/注册链接 -->
+                    <li class="">
+                        <button type="button" class="btn btn-primary"
+                            onclick="location.href='{:url('user/login')}'">登录</button>
+                        <button type="button" class="btn btn-light"
+                            onclick="location.href='{:url('user/register')}'">注册</button>
+                    </li>
+                    {/if}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </br>
+    </br>
+
+    <!-- 文章列表部分 -->
+
+    <div class="container">
+        <div class="category-selector mb-4"> <!-- 使用mb-4添加底部间距 -->
+            <select class="form-control custom-select" id="categorySelect">
+                <option value="">所有分类</option>
+                <!-- 动态加载分类选项 -->
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 文章列表将通过JavaScript动态更新 -->
+                <div id="articleList">
+                    <!-- 动态加载文章项 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination" id="pagination">
+
+        </div>
+    </div>
+
+    </br>
+    <!-- 省略了JS文件的引入 -->
+    <script src="__CDN__/assets/js/js/jquery-3.7.1.min.js"></script>
+    <script src="__CDN__/assets/js/js/popper.min.js"></script>
+    <script src="__CDN__/assets/js/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

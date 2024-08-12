@@ -1,0 +1,50 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Code')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-code" class="form-control " rows="5" name="row[code]"
+                cols="50">{$row.code|htmlentities}</textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">
+            <?php echo __('Classid'); ?>:
+        </label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-classid" class="form-control" name="row[classid]">
+                <!-- 这里应该是从数据库中获取年级数据并生成下拉选项 -->
+                <?php foreach ($groupId as$key => $groupIds): ?>
+                {if condition="$groupIds == $row.classid"}
+                <option value="<?php echo $groupIds; ?>" selected>
+                    {else}
+                <option value="<?php echo $groupIds; ?>">
+                    {/if}
+                    <?php echo $groupList[$key]; ?>
+                </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div>
+
+    <!--<div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Classid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-classid" data-rule="required" class="form-control" name="row[classid]" type="number" value="{$row.classid|htmlentities}">
+        </div>
+    </div>-->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Isusing')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-isusing" data-rule="required" class="form-control" name="row[isusing]" type="number"
+                value="{$row.isusing|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+        </div>
+    </div>
+</form>
