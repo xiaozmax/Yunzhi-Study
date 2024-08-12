@@ -13,6 +13,11 @@
 
 后台默认账户为admin，密码为admin000，记得改密码（小心学生手动爆破出来哦）
 
+版权所有Copyright © 2023-2024 by 芸志信息 (https://xiaozmax.top)
+
+All rights reserved。
+
+
 # 其他介绍
 ## 主要开发框架：FASTADMIN
 FastAdmin是一款基于ThinkPHP+Bootstrap的极速后台开发框架。
@@ -143,105 +148,3 @@ FastAdmin遵循Apache2开源协议发布，并提供免费使用。
 版权所有Copyright © 2017-2022 by FastAdmin (https://www.fastadmin.net)
 
 All rights reserved。
-
-开始使用
-<link rel="stylesheet" href="editormd/css/editormd.css" />
-<div id="test-editor">
-    <textarea style="display:none;">### 关于 Editor.md
-
-**Editor.md** 是一款开源的、可嵌入的 Markdown 在线编辑器（组件），基于 CodeMirror、jQuery 和 Marked 构建。
-    </textarea>
-</div>
-<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="editormd/editormd.min.js"></script>
-<script type="text/javascript">
-    $(function() {
-        var editor = editormd("test-editor", {
-            // width  : "100%",
-            // height : "100%",
-            path   : "editormd/lib/"
-        });
-    });
-</script>复制代码
-更多示例 >>
-
-主要特性
-支持“标准” Markdown / CommonMark 和 Github 风格的语法，也可变身为代码编辑器；
-支持实时预览、图片（跨域）上传、预格式文本/代码/表格插入、代码折叠、搜索替换、只读模式、自定义样式主题和多语言语法高亮等功能；
-支持 ToC 目录（Table of Contents）、Emoji 表情、Task lists、@链接等 Markdown 扩展语法；
-支持 TeX 科学公式（基于 KaTeX）、流程图 Flowchart 和 时序图 Sequence Diagram;
-支持识别和解析 HTML 标签，并且支持自定义过滤标签解析，具有可靠的安全性和几乎无限的扩展性；
-支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；
-兼容主流的浏览器（IE8+）和 Zepto.js，且支持 iPad 等平板设备；
-支持自定义主题样式；
-下载和安装
-最新版本： v1.5.0，更新于 2015-06-09
-
-
-
- 
-
-
-或者通过 NPM 安装：
-
-npm install editor.md
-
-
-
-或者通过 Bower 安装：
-
-bower install editor.md
-
-
-
-
-更新日志：
-
-CHANGES
-
-依赖项目
-Editor.md 的诞生依赖于以下开源项目：
-
-CodeMirror
-marked
-jQuery
-FontAwesome
-github-markdown.css
-KaTeX
-Rephael.js
-prettify.js
-flowchart.js
-sequence-diagram.js
-Prefixes.scss
-
-开发构建使用到的项目及工具：
-
-Visual Studio Code
-Sass/Scss
-Gulp.js
-开源协议
-Editor.md 建立在众多优秀的开源组件基础之上，遵循和使用 MIT License 开源协议，无论个人还是公司，都可以免费自由使用。
-
-
-
-
-
-关注和贡献代码：
-
-
-
-
-
-
-
-主要用户
-
-Editor.md 被广泛地应用于论坛社区、API 文档、开发文档、帮助文档、Wiki、资讯文章等多种应用场景。
-
- 联系我们 editor.md@ipandao.com
-
-
-Editor.md
-Copyright © 2015-2019 Editor.md, MIT license.
-
-Design & Develop By: Pandao     
