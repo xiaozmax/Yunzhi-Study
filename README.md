@@ -7,8 +7,11 @@
 ​
 ## 项目安装
 上传文件到服务器，在application目录中的config.php中配置数据库信息
+
 将Mysql-DATA.zip导入数据库即可
+
 后台默认账户为admin，密码为admin000，记得改密码（小心学生手动爆破出来哦）
+
 # 其他介绍
 ## 主要开发框架：FASTADMIN
 FastAdmin是一款基于ThinkPHP+Bootstrap的极速后台开发框架。
