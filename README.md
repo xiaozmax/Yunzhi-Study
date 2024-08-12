@@ -13,9 +13,11 @@
 
 后台默认账户为admin，密码为admin000，记得改密码（小心学生手动爆破出来哦）
 
-版权所有Copyright © 2023-2024 by 芸志信息 (https://xiaozmax.top)
 
-All rights reserved。
+
+# 版权所有Copyright © 2023-2024 by 芸志信息 (https://xiaozmax.top)
+
+# All rights reserved。
 
 
 # 其他介绍
