@@ -1,0 +1,173 @@
+---------------------------------------------------------------
+[ 2024-05-19T00:47:26+08:00 ] 223.104.21.95 GET wuliji01.xiaozmax.top:6789/
+[运行时间：0.079851s] [吞吐率：12.52req/s] [内存消耗：3,313.69kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002514s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001140s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000042s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'username=xiaoz; login=1; 623eac62931f7a00dc6f5aadbb998f74=125a7254-26fc-41b9-9c65-f2e30dffcf57.XV5-PL9JF3nGJ21obDRtR6HmmCc; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/public; yunzhitecnuid=65; yunzhitecntoken=97cf1edb-7f2e-43f5-9c6b-a66e4635e274; __gads=ID=29a75605efcfa145:T=1710428403:RT=1713917696:S=ALNI_MbmgGoa71IyxnWVMua1ByrklMgrYg; __gpi=UID=00000d379cf1fd58:T=1710428403:RT=1713917696:S=ALNI_MZGvoBm76xnr1iXoqULK0c70zscGA; __eoi=ID=c0cccb40d7e2bcc5:T=1710428403:RT=1713917696:S=AA-Afjb3ZCqpt0JWO096uWSYVc5i',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002310s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000188s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index_new.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-05-19T00:47:26+08:00 ] 223.104.21.95 GET wuliji01.xiaozmax.top:6789/favicon.ico
+[运行时间：0.035348s] [吞吐率：28.29req/s] [内存消耗：1,457.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002321s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000911s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000047s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://wuliji01.xiaozmax.top:6789/',
+  'cookie' => 'username=xiaoz; login=1; 623eac62931f7a00dc6f5aadbb998f74=125a7254-26fc-41b9-9c65-f2e30dffcf57.XV5-PL9JF3nGJ21obDRtR6HmmCc; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/public; yunzhitecnuid=65; yunzhitecntoken=97cf1edb-7f2e-43f5-9c6b-a66e4635e274; __gads=ID=29a75605efcfa145:T=1710428403:RT=1713917696:S=ALNI_MbmgGoa71IyxnWVMua1ByrklMgrYg; __gpi=UID=00000d379cf1fd58:T=1710428403:RT=1713917696:S=ALNI_MZGvoBm76xnr1iXoqULK0c70zscGA; __eoi=ID=c0cccb40d7e2bcc5:T=1710428403:RT=1713917696:S=AA-Afjb3ZCqpt0JWO096uWSYVc5i; PHPSESSID=mgkejv79e2km0ko6isibc7llv1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-05-19T07:21:07+08:00 ] 223.104.21.95 GET wuliji01.xiaozmax.top:6789/
+[运行时间：0.069253s] [吞吐率：14.44req/s] [内存消耗：3,178.83kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002358s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001092s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000053s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__eoi=ID=45e18caed51afec8:T=1711791443:RT=1713586096:S=AA-AfjYX1nbTf6_QHxeeS33TiAPq; order=id%20desc; serverType=nginx; rank=list; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; file_recycle_status=true; Path=/www/wwwroot/code; 623eac62931f7a00dc6f5aadbb998f74=ea8248a3-fb07-41d5-ae0b-e407f459dc6c.mIjw-yX0NOwE4TbXu7mvCTrqkZM',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.57',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002332s ]
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000186s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index_new.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-05-19T07:21:08+08:00 ] 223.104.21.95 GET wuliji01.xiaozmax.top:6789/favicon.ico
+[运行时间：0.034156s] [吞吐率：29.28req/s] [内存消耗：1,456.71kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002057s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000868s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000039s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__eoi=ID=45e18caed51afec8:T=1711791443:RT=1713586096:S=AA-AfjYX1nbTf6_QHxeeS33TiAPq; order=id%20desc; serverType=nginx; rank=list; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; file_recycle_status=true; Path=/www/wwwroot/code; 623eac62931f7a00dc6f5aadbb998f74=ea8248a3-fb07-41d5-ae0b-e407f459dc6c.mIjw-yX0NOwE4TbXu7mvCTrqkZM; PHPSESSID=vq5v40ip14is52i5sp8rtpju6r',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top:6789/',
+  'accept' => 'image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.57',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

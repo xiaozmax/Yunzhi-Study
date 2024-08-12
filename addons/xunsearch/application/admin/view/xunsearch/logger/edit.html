@@ -1,0 +1,47 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_id" data-rule="required" data-source="xunsearch/project/index" data-field="title" class="form-control selectpage" name="row[project_id]" type="text" value="{$row.project_id}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Word')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-word" class="form-control" name="row[word]" data-rule="required" type="text" value="{$row.word}" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nums')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="input-group margin-bottom-sm">
+                        <span class="input-group-addon">搜索次数</span>
+                        <input class="form-control" type="number" data-rule="required" value="{$row.nums}" disabled>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="input-group margin-bottom-sm">
+                        <span class="input-group-addon">追加次数</span>
+                        <input id="c-nums" class="form-control" name="row[nums]" type="number" data-rule="required" value="0">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="alert alert-danger-light" style="margin-top:5px;">
+                如果需要减少搜索次数，请删除后重新添加搜索词
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

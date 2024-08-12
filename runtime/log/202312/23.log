@@ -1,0 +1,344 @@
+---------------------------------------------------------------
+[ 2023-12-23T22:11:47+08:00 ] 10.0.0.1 GET 10.0.0.242/
+[运行时间：0.158221s] [吞吐率：6.32req/s] [内存消耗：3,487.73kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000683s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004661s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002093s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000146s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005855s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T22:14:41+08:00 ] 10.0.0.1 GET wuliji01.xiaozmax.top/
+[运行时间：0.163222s] [吞吐率：6.13req/s] [内存消耗：3,503.55kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000871s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004572s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002127s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000103s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'ssxmod_itna=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQ7DlOlQxA5D8D6DQeGTTRYeADR0nMhwtEetDuDP3bcrxhawQmbr0WQjtEueDHxY=DU=AHpoD4RKGwD0eG+DD4DWDmnHDnxAQDjxGPyn2v5CDYPDEBKDYxDrUhKDRxi7DD5Q1x07DQvkNlwko9awyaO1qmAxKBKD91oDsZ0fQBFmjS3qZpYEIb73Ax0kl40Og1vssaoDUeysSrBeZGi3tNhNeQ2qi2rKvme4=LDdejG5=MGbDgQy/GRP+xDWK00PI9CN4D; ssxmod_itna2=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQD6h4Yqyfb98KDsieDLCUzXtmZ5+0QD67B9ieyQnhA2hNWfAgrAdv2BA4pQdzevajq5eZ896p5UT48wKKGG1t8hkum/6xq+uOIu9bZwjD68i89o6C7SicWGE2eMj55k=AzSj3cRf3V+o6K3qpe3E+0RG5IOntYMrtrZYiHhhOznG9nkWqWwoadbaqA2u7a4tiPLtHd4nc0cHPNR6ute84Zb0w8zIquW36wlcdsUntszbIQGtpp4v+IW3NazlNNkZnvhyf+Xl8tbHMXEWrZNpC3AYtVOiTo0cmDP3PzZvOAGfDp7Zqnnf0mEaimx0DcmmCpx4jDtzUkAGxAKKW+iWqSYxl060WDpA5yjUs=I50m=ljC=jj2ddCq8WLvE2jPIHYA+2xp7YSQETZdsbKham9YmaQfa0A/iLFaoT83+eq6lPKAD4QG5DYcDdqlcvfmBt6fWnoEITcazWf+4Rooe7R0en5saP6FffDvzQj/I6Nt0mfmbxYAG=i=o8DRvI6wDRa7U36WLe8fD0O=3W3YNZIv+4DQFdY03A=x38kF4FSYFQrs0bKSiIrGXi0q9Arq/0aaKjoFFdtSB730W=4n2qqKw0VZ=SD4Ku38ktCisQ+yxXB6AoZ/tm2tKhG=N48sQUxxQyuVUCnO5DmccN4nC1vxDDLxD+PHze5W43D2c52Gh1P1DRo4ZxC0DP9XD5VRaCCKIpohNYR13QircDZxoIdTP6c53GDD===; sid=UDWryT15oxqCuRHDabFJOeTe3y125gVE; sid.sig=7PwO1H-LhemYrP_LX4JV80KlO1Y; Qs_lvt_383843=1696321483%2C1697285587%2C1700377584%2C1700560048%2C1701874194; Qs_pv_383843=4371346694548993500%2C915956824041307100%2C3528028719615826400%2C1538918310795105300%2C131343269536382980; __gads=ID=d5f161d8653a6e92:T=1698465198:RT=1702185532:S=ALNI_MacJLf7Pc8l6oDjLKwr7Ww7bT7zNQ; __gpi=UID=00000c7681866bb1:T=1698465198:RT=1702185532:S=ALNI_MYpf2AaYOB12OWSESryikY7BUIckw',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+  'host' => 'wuliji01.xiaozmax.top',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006091s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T22:14:42+08:00 ] 10.0.0.1 GET wuliji01.xiaozmax.top/favicon.ico
+[运行时间：0.077448s] [吞吐率：12.91req/s] [内存消耗：1,839.61kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003976s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001952s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000093s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'http://wuliji01.xiaozmax.top/',
+  'cookie' => 'ssxmod_itna=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQ7DlOlQxA5D8D6DQeGTTRYeADR0nMhwtEetDuDP3bcrxhawQmbr0WQjtEueDHxY=DU=AHpoD4RKGwD0eG+DD4DWDmnHDnxAQDjxGPyn2v5CDYPDEBKDYxDrUhKDRxi7DD5Q1x07DQvkNlwko9awyaO1qmAxKBKD91oDsZ0fQBFmjS3qZpYEIb73Ax0kl40Og1vssaoDUeysSrBeZGi3tNhNeQ2qi2rKvme4=LDdejG5=MGbDgQy/GRP+xDWK00PI9CN4D; ssxmod_itna2=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQD6h4Yqyfb98KDsieDLCUzXtmZ5+0QD67B9ieyQnhA2hNWfAgrAdv2BA4pQdzevajq5eZ896p5UT48wKKGG1t8hkum/6xq+uOIu9bZwjD68i89o6C7SicWGE2eMj55k=AzSj3cRf3V+o6K3qpe3E+0RG5IOntYMrtrZYiHhhOznG9nkWqWwoadbaqA2u7a4tiPLtHd4nc0cHPNR6ute84Zb0w8zIquW36wlcdsUntszbIQGtpp4v+IW3NazlNNkZnvhyf+Xl8tbHMXEWrZNpC3AYtVOiTo0cmDP3PzZvOAGfDp7Zqnnf0mEaimx0DcmmCpx4jDtzUkAGxAKKW+iWqSYxl060WDpA5yjUs=I50m=ljC=jj2ddCq8WLvE2jPIHYA+2xp7YSQETZdsbKham9YmaQfa0A/iLFaoT83+eq6lPKAD4QG5DYcDdqlcvfmBt6fWnoEITcazWf+4Rooe7R0en5saP6FffDvzQj/I6Nt0mfmbxYAG=i=o8DRvI6wDRa7U36WLe8fD0O=3W3YNZIv+4DQFdY03A=x38kF4FSYFQrs0bKSiIrGXi0q9Arq/0aaKjoFFdtSB730W=4n2qqKw0VZ=SD4Ku38ktCisQ+yxXB6AoZ/tm2tKhG=N48sQUxxQyuVUCnO5DmccN4nC1vxDDLxD+PHze5W43D2c52Gh1P1DRo4ZxC0DP9XD5VRaCCKIpohNYR13QircDZxoIdTP6c53GDD===; sid=UDWryT15oxqCuRHDabFJOeTe3y125gVE; sid.sig=7PwO1H-LhemYrP_LX4JV80KlO1Y; Qs_lvt_383843=1696321483%2C1697285587%2C1700377584%2C1700560048%2C1701874194; Qs_pv_383843=4371346694548993500%2C915956824041307100%2C3528028719615826400%2C1538918310795105300%2C131343269536382980; __gads=ID=d5f161d8653a6e92:T=1698465198:RT=1702185532:S=ALNI_MacJLf7Pc8l6oDjLKwr7Ww7bT7zNQ; __gpi=UID=00000c7681866bb1:T=1698465198:RT=1702185532:S=ALNI_MYpf2AaYOB12OWSESryikY7BUIckw',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+  'host' => 'wuliji01.xiaozmax.top',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T22:31:33+08:00 ] 10.0.0.1 GET wuliji01.xiaozmax.top/
+[运行时间：0.090834s] [吞吐率：11.01req/s] [内存消耗：3,503.74kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000134s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002682s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001252s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000056s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ssxmod_itna=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQ7DlOlQxA5D8D6DQeGTTRYeADR0nMhwtEetDuDP3bcrxhawQmbr0WQjtEueDHxY=DU=AHpoD4RKGwD0eG+DD4DWDmnHDnxAQDjxGPyn2v5CDYPDEBKDYxDrUhKDRxi7DD5Q1x07DQvkNlwko9awyaO1qmAxKBKD91oDsZ0fQBFmjS3qZpYEIb73Ax0kl40Og1vssaoDUeysSrBeZGi3tNhNeQ2qi2rKvme4=LDdejG5=MGbDgQy/GRP+xDWK00PI9CN4D; ssxmod_itna2=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQD6h4Yqyfb98KDsieDLCUzXtmZ5+0QD67B9ieyQnhA2hNWfAgrAdv2BA4pQdzevajq5eZ896p5UT48wKKGG1t8hkum/6xq+uOIu9bZwjD68i89o6C7SicWGE2eMj55k=AzSj3cRf3V+o6K3qpe3E+0RG5IOntYMrtrZYiHhhOznG9nkWqWwoadbaqA2u7a4tiPLtHd4nc0cHPNR6ute84Zb0w8zIquW36wlcdsUntszbIQGtpp4v+IW3NazlNNkZnvhyf+Xl8tbHMXEWrZNpC3AYtVOiTo0cmDP3PzZvOAGfDp7Zqnnf0mEaimx0DcmmCpx4jDtzUkAGxAKKW+iWqSYxl060WDpA5yjUs=I50m=ljC=jj2ddCq8WLvE2jPIHYA+2xp7YSQETZdsbKham9YmaQfa0A/iLFaoT83+eq6lPKAD4QG5DYcDdqlcvfmBt6fWnoEITcazWf+4Rooe7R0en5saP6FffDvzQj/I6Nt0mfmbxYAG=i=o8DRvI6wDRa7U36WLe8fD0O=3W3YNZIv+4DQFdY03A=x38kF4FSYFQrs0bKSiIrGXi0q9Arq/0aaKjoFFdtSB730W=4n2qqKw0VZ=SD4Ku38ktCisQ+yxXB6AoZ/tm2tKhG=N48sQUxxQyuVUCnO5DmccN4nC1vxDDLxD+PHze5W43D2c52Gh1P1DRo4ZxC0DP9XD5VRaCCKIpohNYR13QircDZxoIdTP6c53GDD===; sid=UDWryT15oxqCuRHDabFJOeTe3y125gVE; sid.sig=7PwO1H-LhemYrP_LX4JV80KlO1Y; Qs_lvt_383843=1696321483%2C1697285587%2C1700377584%2C1700560048%2C1701874194; Qs_pv_383843=4371346694548993500%2C915956824041307100%2C3528028719615826400%2C1538918310795105300%2C131343269536382980; __gads=ID=d5f161d8653a6e92:T=1698465198:RT=1702185532:S=ALNI_MacJLf7Pc8l6oDjLKwr7Ww7bT7zNQ; __gpi=UID=00000c7681866bb1:T=1698465198:RT=1702185532:S=ALNI_MYpf2AaYOB12OWSESryikY7BUIckw',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003218s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T22:31:36+08:00 ] 10.0.0.1 GET wuliji01.xiaozmax.top/index/index/class
+[运行时间：0.161934s] [吞吐率：6.18req/s] [内存消耗：3,506.41kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000100s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004669s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002181s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000104s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'class',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ssxmod_itna=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQ7DlOlQxA5D8D6DQeGTTRYeADR0nMhwtEetDuDP3bcrxhawQmbr0WQjtEueDHxY=DU=AHpoD4RKGwD0eG+DD4DWDmnHDnxAQDjxGPyn2v5CDYPDEBKDYxDrUhKDRxi7DD5Q1x07DQvkNlwko9awyaO1qmAxKBKD91oDsZ0fQBFmjS3qZpYEIb73Ax0kl40Og1vssaoDUeysSrBeZGi3tNhNeQ2qi2rKvme4=LDdejG5=MGbDgQy/GRP+xDWK00PI9CN4D; ssxmod_itna2=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQD6h4Yqyfb98KDsieDLCUzXtmZ5+0QD67B9ieyQnhA2hNWfAgrAdv2BA4pQdzevajq5eZ896p5UT48wKKGG1t8hkum/6xq+uOIu9bZwjD68i89o6C7SicWGE2eMj55k=AzSj3cRf3V+o6K3qpe3E+0RG5IOntYMrtrZYiHhhOznG9nkWqWwoadbaqA2u7a4tiPLtHd4nc0cHPNR6ute84Zb0w8zIquW36wlcdsUntszbIQGtpp4v+IW3NazlNNkZnvhyf+Xl8tbHMXEWrZNpC3AYtVOiTo0cmDP3PzZvOAGfDp7Zqnnf0mEaimx0DcmmCpx4jDtzUkAGxAKKW+iWqSYxl060WDpA5yjUs=I50m=ljC=jj2ddCq8WLvE2jPIHYA+2xp7YSQETZdsbKham9YmaQfa0A/iLFaoT83+eq6lPKAD4QG5DYcDdqlcvfmBt6fWnoEITcazWf+4Rooe7R0en5saP6FffDvzQj/I6Nt0mfmbxYAG=i=o8DRvI6wDRa7U36WLe8fD0O=3W3YNZIv+4DQFdY03A=x38kF4FSYFQrs0bKSiIrGXi0q9Arq/0aaKjoFFdtSB730W=4n2qqKw0VZ=SD4Ku38ktCisQ+yxXB6AoZ/tm2tKhG=N48sQUxxQyuVUCnO5DmccN4nC1vxDDLxD+PHze5W43D2c52Gh1P1DRo4ZxC0DP9XD5VRaCCKIpohNYR13QircDZxoIdTP6c53GDD===; sid=UDWryT15oxqCuRHDabFJOeTe3y125gVE; sid.sig=7PwO1H-LhemYrP_LX4JV80KlO1Y; Qs_lvt_383843=1696321483%2C1697285587%2C1700377584%2C1700560048%2C1701874194; Qs_pv_383843=4371346694548993500%2C915956824041307100%2C3528028719615826400%2C1538918310795105300%2C131343269536382980; __gads=ID=d5f161d8653a6e92:T=1698465198:RT=1702185532:S=ALNI_MacJLf7Pc8l6oDjLKwr7Ww7bT7zNQ; __gpi=UID=00000c7681866bb1:T=1698465198:RT=1702185532:S=ALNI_MYpf2AaYOB12OWSESryikY7BUIckw',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005546s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->class[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/class.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'status',
+  4 => 'message',
+  5 => 'secsitename',
+  6 => 'sitename',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T22:32:06+08:00 ] 10.0.0.1 GET wuliji01.xiaozmax.top/index/index/class
+[运行时间：0.148387s] [吞吐率：6.74req/s] [内存消耗：3,508.05kb] [文件加载：72]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000105s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004757s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002127s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000080s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'class',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'ssxmod_itna=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQ7DlOlQxA5D8D6DQeGTTRYeADR0nMhwtEetDuDP3bcrxhawQmbr0WQjtEueDHxY=DU=AHpoD4RKGwD0eG+DD4DWDmnHDnxAQDjxGPyn2v5CDYPDEBKDYxDrUhKDRxi7DD5Q1x07DQvkNlwko9awyaO1qmAxKBKD91oDsZ0fQBFmjS3qZpYEIb73Ax0kl40Og1vssaoDUeysSrBeZGi3tNhNeQ2qi2rKvme4=LDdejG5=MGbDgQy/GRP+xDWK00PI9CN4D; ssxmod_itna2=Qq0x2DnD9D0ii=KP0dmO3xg7tGktq1qHNNYQD6h4Yqyfb98KDsieDLCUzXtmZ5+0QD67B9ieyQnhA2hNWfAgrAdv2BA4pQdzevajq5eZ896p5UT48wKKGG1t8hkum/6xq+uOIu9bZwjD68i89o6C7SicWGE2eMj55k=AzSj3cRf3V+o6K3qpe3E+0RG5IOntYMrtrZYiHhhOznG9nkWqWwoadbaqA2u7a4tiPLtHd4nc0cHPNR6ute84Zb0w8zIquW36wlcdsUntszbIQGtpp4v+IW3NazlNNkZnvhyf+Xl8tbHMXEWrZNpC3AYtVOiTo0cmDP3PzZvOAGfDp7Zqnnf0mEaimx0DcmmCpx4jDtzUkAGxAKKW+iWqSYxl060WDpA5yjUs=I50m=ljC=jj2ddCq8WLvE2jPIHYA+2xp7YSQETZdsbKham9YmaQfa0A/iLFaoT83+eq6lPKAD4QG5DYcDdqlcvfmBt6fWnoEITcazWf+4Rooe7R0en5saP6FffDvzQj/I6Nt0mfmbxYAG=i=o8DRvI6wDRa7U36WLe8fD0O=3W3YNZIv+4DQFdY03A=x38kF4FSYFQrs0bKSiIrGXi0q9Arq/0aaKjoFFdtSB730W=4n2qqKw0VZ=SD4Ku38ktCisQ+yxXB6AoZ/tm2tKhG=N48sQUxxQyuVUCnO5DmccN4nC1vxDDLxD+PHze5W43D2c52Gh1P1DRo4ZxC0DP9XD5VRaCCKIpohNYR13QircDZxoIdTP6c53GDD===; sid=UDWryT15oxqCuRHDabFJOeTe3y125gVE; sid.sig=7PwO1H-LhemYrP_LX4JV80KlO1Y; Qs_lvt_383843=1696321483%2C1697285587%2C1700377584%2C1700560048%2C1701874194; Qs_pv_383843=4371346694548993500%2C915956824041307100%2C3528028719615826400%2C1538918310795105300%2C131343269536382980; __gads=ID=d5f161d8653a6e92:T=1698465198:RT=1702185532:S=ALNI_MacJLf7Pc8l6oDjLKwr7Ww7bT7zNQ; __gpi=UID=00000c7681866bb1:T=1698465198:RT=1702185532:S=ALNI_MYpf2AaYOB12OWSESryikY7BUIckw',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005917s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->class[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/class.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'status',
+  4 => 'message',
+  5 => 'secsitename',
+  6 => 'sitename',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T23:36:25+08:00 ] 107.148.191.194 GET wuliji01.xiaozmax.top:16789/
+[运行时间：0.161330s] [吞吐率：6.20req/s] [内存消耗：3,489.56kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000190s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004706s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002349s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 MicroMessenger/7.0.3(0x17000321) NetType/WIFI Language/zh_CN',
+  'host' => 'wuliji01.xiaozmax.top:16789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005922s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-12-23T23:36:41+08:00 ] 23.251.41.71 GET wuliji01.xiaozmax.top:16789/
+[运行时间：0.144892s] [吞吐率：6.90req/s] [内存消耗：3,489.56kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000102s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004717s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001983s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000063s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16D57 MicroMessenger/7.0.3(0x17000321) NetType/WIFI Language/zh_CN',
+  'host' => 'wuliji01.xiaozmax.top:16789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005635s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File

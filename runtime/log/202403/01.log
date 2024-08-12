@@ -1,0 +1,501 @@
+---------------------------------------------------------------
+[ 2024-03-01T17:57:52+08:00 ] 10.0.0.9 GET 10.0.0.242/
+[运行时间：1.612920s] [吞吐率：0.62req/s] [内存消耗：3,661.12kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.322944s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.111582s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002093s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000117s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242:18390/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.012561s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:57:52+08:00 ] 10.0.0.9 GET 10.0.0.242/
+[运行时间：1.613362s] [吞吐率：0.62req/s] [内存消耗：3,661.09kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.323237s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.111969s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002528s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000103s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242:18390/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.014156s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:57:53+08:00 ] 10.0.0.9 GET 10.0.0.242/favicon.ico
+[运行时间：0.067106s] [吞吐率：14.90req/s] [内存消耗：1,862.84kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000340s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002979s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001734s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000098s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:57:54+08:00 ] 10.0.0.9 GET 10.0.0.242/
+[运行时间：0.148103s] [吞吐率：6.75req/s] [内存消耗：3,661.10kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000271s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002855s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001808s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000069s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242:18390/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005410s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:26+08:00 ] 10.0.0.9 GET 10.0.0.242/index/index/class
+[运行时间：0.144861s] [吞吐率：6.90req/s] [内存消耗：3,663.34kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000472s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003168s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001820s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000105s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'class',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005286s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->class[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/class.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'status',
+  4 => 'message',
+  5 => 'secsitename',
+  6 => 'sitename',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:27+08:00 ] 10.0.0.9 GET 10.0.0.242/
+[运行时间：0.138437s] [吞吐率：7.22req/s] [内存消耗：3,660.92kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000284s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003055s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001757s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000072s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/index/index/class',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005227s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:29+08:00 ] 10.0.0.9 GET 10.0.0.242/index/index/class
+[运行时间：0.145822s] [吞吐率：6.86req/s] [内存消耗：3,663.34kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000273s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001713s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000135s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'class',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005524s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->class[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/class.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'status',
+  4 => 'message',
+  5 => 'secsitename',
+  6 => 'sitename',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:39+08:00 ] 10.0.0.9 GET 10.0.0.242/index/index/contentlist
+[运行时间：0.142268s] [吞吐率：7.03req/s] [内存消耗：3,663.86kb] [文件加载：76]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000352s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003071s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001942s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000105s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'contentlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/index/index/class',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005604s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->contentlist[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/contectlist.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'status',
+  4 => 'message',
+  5 => 'secsitename',
+  6 => 'sitename',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:43+08:00 ] 10.0.0.9 GET 10.0.0.242/index/index/help
+[运行时间：0.168742s] [吞吐率：5.93req/s] [内存消耗：3,708.76kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000363s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003295s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002086s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000129s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'help',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/index/index/contentlist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.006200s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:47+08:00 ] 10.0.0.9 GET 10.0.0.242/index/index/about.html
+[运行时间：0.148435s] [吞吐率：6.74req/s] [内存消耗：3,708.82kb] [文件加载：78]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000380s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003579s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001881s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000102s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'about',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/index/index/contentlist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005560s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-03-01T17:58:52+08:00 ] 10.0.0.9 GET 10.0.0.242/
+[运行时间：0.161217s] [吞吐率：6.20req/s] [内存消耗：3,660.97kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000433s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004305s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002354s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000115s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'uid=2; token=195be037-1f62-4519-83bf-07cd10df1fa8; 0c2824ca3bf26da7038babc69970a4f2=add4936e-4a0f-4ff3-be6e-1806b9b0861f.gRXsSXWxx2jd-xZT5hYmHinT6EA; 1858b45bca4f876838470b98649c20ea=dc6fc150-0f72-40bf-9604-b9b46ad346d6.u8NkWyDnlQkJdGOazs-p2Mmym3A; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; pro_end=-1; ltd_end=-1; 82a62f23ab5397e94d342d324611955d=76ddae0a-2c0f-461d-8bea-da0bf99cea95._4FjI0PzadvVDojHtZ1nkOhwm60; distribution=ubuntu; force=0; soft_remarks=%7B%22list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%225%u5206%u949F%u6781%u901F%u54CD%u5E94%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%uFF08%u5E74%u4ED8%uFF09%22%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%uFF08%u5E74%u4ED8%uFF09%22%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%uFF08%u5E74%u4ED8%uFF09%22%5D%2C%22pro_list%22%3A%5B%22%u66F4%u6362%u6388%u6743IP%22%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%2C%22%u5546%u7528%u9632%u706B%u5899%u6388%u6743%22%5D%2C%22kfqq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%2C%22qun%22%3A%22%22%2C%22activity_list%22%3A%5B%22%3Cspan%20style%3D%5C%22color%3A%23D98704%3Bpadding-right%3A10px%5C%22%3E618%u7279%u60E0%u6D3B%u52A8%uFF0C6%u67089%u65E5-%206%u670818%u65E5%uFF0C%u6700%u9AD8%u51CF15000%u5143%3C/span%3E%3Ca%20style%3D%5C%22text-decoration%3Anone%3B%5C%22%20href%3D%5C%22https%3A//www.bt.cn/618%5C%22%20rel%3D%5C%22noreferrer%5C%22%20%20target%3D%5C%22_blank%5C%22%20class%3D%5C%22btlink%5C%22%3E%u70B9%u51FB%u7ACB%u5373%u67E5%u770B%3E%3E%3C/a%3E%22%5D%2C%22kf_list%22%3A%5B%7B%22qq%22%3A%223007255432%22%2C%22kf%22%3A%22http%3A//q.url.cn/CDfQPS%3F_type%3Dwpa%26qidian%3Dtrue%22%7D%2C%7B%22qq%22%3A%222927440070%22%2C%22kf%22%3A%22http%3A//wpa.qq.com/msgrd%3Fv%3D3%26uin%3D2927440070%26site%3Dqq%26menu%3Dyes%26from%3Dmessage%26isappinstalled%3D0%22%7D%5D%2C%22wx_list%22%3A%5B%7B%22ps%22%3A%22%u5728%u7EBF%u5BA2%u670D%22%2C%22kf%22%3A%22https%3A//www.bt.cn/new/wechat_customer%22%7D%5D%2C%22vips_list%22%3A%7B%22%u591A%u5BF9%u4E00%u6280%u672F%u652F%u6301%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%22%u5168%u5E745%u6B21%u5B89%u5168%u6392%u67E5%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A0%2C%22vltd%22%3A1%7D%2C%225%u5206%u949F%u6025%u901F%u54CD%u5E94%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2230+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2220+%u4F01%u4E1A%u7248%u4E13%u4EAB%u529F%u80FD%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%221000%u6761%u514D%u8D39%u77ED%u4FE1%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%222%u5F20SSL%u5546%u7528%u8BC1%u4E66%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u4E13%u4EAB%u4F01%u4E1A%u670D%u52A1%u7FA4%28%u5E74%u4ED8%29%22%3A%7B%22pro%22%3A0%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22WAF%u9632%u706B%u5899%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u66F4%u6362%u6388%u6743IP%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%22%u5BA2%u670D%u4F18%u5148%u54CD%u5E94%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215+%u6B3E%u4ED8%u8D39%u63D2%u4EF6%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%2C%2215%u5929%u65E0%u7406%u7531%u9000%u6B3E%22%3A%7B%22pro%22%3A1%2C%22ltd%22%3A1%2C%22vltd%22%3A1%7D%7D%7D; load_search=undefined; softType=-1; load_page=1; p-1=1; load_type=-1',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://10.0.0.242/index/index/contentlist',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '10.0.0.242',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005704s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File

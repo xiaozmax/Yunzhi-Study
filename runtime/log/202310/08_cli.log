@@ -1,0 +1,61 @@
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000798s ]
+[ info ] [ LOG ] INIT File
+info
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ CACHE ] INIT File
+info
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005225s ]
+info
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002164s ]
+info
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:09+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000332s ]
+[ info ] [ LOG ] INIT File
+info
+[ 2023-10-08T17:04:32+08:00 ][ info ] [ CACHE ] INIT File
+info
+[ 2023-10-08T17:04:32+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003868s ]
+info
+[ 2023-10-08T17:04:32+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001905s ]
+info
+[ 2023-10-08T17:04:32+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000336s ]
+[ info ] [ LOG ] INIT File
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ CACHE ] INIT File
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004361s ]
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002161s ]
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000404s ]
+[ info ] [ LOG ] INIT File
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ CACHE ] INIT File
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005044s ]
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002381s ]
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ DB ] INIT mysql
+info
+[ 2023-10-08T17:04:49+08:00 ][ info ] [ LANG ] /www/wwwroot/code/application/admin/lang/zh-cn.php
+info
+[ 2023-10-08T17:05:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000875s ]
+[ info ] [ LOG ] INIT File
+info
+[ 2023-10-08T17:05:12+08:00 ][ info ] [ CACHE ] INIT File
+info
+[ 2023-10-08T17:05:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004561s ]
+info
+[ 2023-10-08T17:05:12+08:00 ][ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.002196s ]
+info
+[ 2023-10-08T17:05:12+08:00 ][ info ] [ DB ] INIT mysql
+info

@@ -1,0 +1,39 @@
+{:hook('prismhook')}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">
+                Prism代码高亮演示
+            </h2>
+            <div class="content">
+                <pre>
+                <code class="language-php">
+// 公共助手函数
+if (!function_exists('__')) {
+
+    /**
+     * 获取语言变量值
+     * @param string $name 语言变量名
+     * @param array $vars 动态变量值
+     * @param string $lang 语言
+     * @return mixed
+     */
+    function __($name, $vars = [], $lang = '')
+    {
+        if (is_numeric($name) || !$name)
+            return $name;
+        if (!is_array($vars)) {
+            $vars = func_get_args();
+            array_shift($vars);
+            $lang = '';
+        }
+        return \think\Lang::get($name, $vars, $lang);
+    }
+}
+                </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+</div>

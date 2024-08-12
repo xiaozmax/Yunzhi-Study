@@ -1,0 +1,31 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_id" data-rule="required" data-source="xunsearch/project/index" data-field="title" class="form-control selectpage" name="row[project_id]" type="text" value="{$Think.get.project_id|htmlentities}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Word')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-word" class="form-control" name="row[word]" data-rule="required" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Nums')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-nums" class="form-control" name="row[nums]" type="number" data-rule="required" value="1">
+            <div class="alert alert-danger-light" style="margin-top:5px;">
+                如果搜索词已经存在，将会追加次数
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,162 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <input type="hidden" id="c-field_id" value="{$row.id}">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Project_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-project_id" data-rule="required" data-source="xunsearch/project/index" data-field="title" class="form-control selectpage" name="row[project_id]" type="text" value="{$row.project_id|htmlentities}" disabled>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="text" data-rule="required;name" value="{$row.name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text" data-rule="required" value="{$row.title|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-type" class="form-control selectpicker" name="row[type]">
+                {foreach name="typeList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.type"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+            <div class="alert alert-success-light" style="margin-top:5px;">
+                string 字符型，适用多数情况，也是默认值<br>
+                numeric 数值型，包含整型和浮点数，仅当字段需用于以排序或区间检索时才设为该类型，否则请使用 string　即可<br>
+                date 日期型，形式为 YYYYmmdd 这样固定的 8 字节，如果没有区间检索或排序需求不建议使用<br>
+                id 主键型，确保每条数据具备唯一值，是索引更新和删除的凭据，每个搜索项目必须有且仅有一个 id 字段，该字段的值不区分大小写<br>
+                title 标题型，标题或名称字段，至多有一个该类型的字段<br>
+                body 内容型，主内容字段, 即本搜索项目中内容最长的字段，至多只有一个该类型字段，本字段不支持字段检索
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Index')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-index" class="form-control selectpicker" name="row[index]">
+                {foreach name="indexList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.index"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+            <div class="alert alert-info-light" style="margin-top:5px;">
+                xunsearch 的索引有 2 种模式：其一是不标明字段的检索，称之为“混合区检索”；其二是标明特定字段的“字段检索”。 例如：搜索 XXX YYY 表示在混合区检索，返回的结果可能是 title 也有可能是 body 字段符合匹配； 而搜索 title:XXX 则表示仅检索 title 匹配 XXX 的数据。每个字段可以指定的索引方式的值如下：<br>
+                none 不做索引，所有的搜索匹配均与本字段无关，这个字段只用于排序或搜索结果展示用到。<br>
+                self 字段索引，可以在搜索时用 field:XXX 来检索本字段<br>
+                mixed 混合区索引，不标明字段的默认搜索也可以检索本字段<br>
+                both 相当于 self + mixed，两种情况均索引<br>
+                通常情况默认值为 none ，但 id 型字段默认是 self ，title 型字段是 both ，body 型字段则固定为 mixed 。
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Tokenizer')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tokenizer" class="form-control" name="row[tokenizer]" type="text" value="{$row.tokenizer|htmlentities}">
+            <div class="alert alert-danger-light" style="margin-top:5px;">
+                默认为 default 采用内置的功能强大的 scws 分词，适合绝大多数字符串字段。也可以指定自定义分词器， 格式为 name 或 name(arg) 两种形式，其中 name 是分词器名称，arg 则是传递给分词器构造函数的参数。 自定义分词器需要在 lib/ 目录下编写名为 XSTokenizerName 的分词类并实现接口 XSTokenizer， 内置支持的分词器有以下几种：<br>
+                full 表示本字段的值整体作为一个检索词，像各种 ID 都适合这种情况<br>
+                none 表示本字段没有任何词汇用于索引<br>
+                split([ ]) 表示根据参数分割内容，默认参数为空格，若参数以 / 开头并以 / 结尾则 内部调用 preg_split(arg, ..) 来分割取词，以支持正则或其它特殊字符分割<br>
+                xlen([2]) 表示根据指定参数长度分段取词，如 ABCDEF => AB + CD + EF<br>
+                xstep([2]) 表示根据指定参数步长逐段取词，如 ABCDEF => AB + ABCD + ABCDEF<br>
+                scws([3]) 表示采用指定参数为复合等级的 scws 分词，（若无特殊复合需求，无需指定）
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Cutlen')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-cutlen" class="form-control" name="row[cutlen]" type="number" value="{$row.cutlen|htmlentities}">
+            <div class="alert alert-success-light" style="margin-top:5px;">
+                默认值为 0 表示不截取。主要是针对某些内容特别长的字段在返回结果时自动剪取包含关键词的一小段文字。 典型的是 body 型字段默认为 300 。长度单位是字节，通常 UTF-8 编码的一个汉字为 3 个字节。
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Weight')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-weight" class="form-control" name="row[weight]" type="number" value="{$row.weight|htmlentities}">
+            <div class="alert alert-info-light" style="margin-top:5px;">
+                在混合检索时，可以对标题和内容等不同字段进行权重计算，如果你不想该字段参与计算权重可设为 0 。 通常默认值为 1 ，但 title 型默认为 5 而 body 型则固定为 1 。
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Phrase')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-phrase" class="form-control selectpicker" name="row[phrase]">
+                {foreach name="phraseList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.phrase"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+            <div class="alert alert-danger-light" style="margin-top:5px;">
+                即当给搜索语句加上引号时，则要求匹配的结果必须严格按照搜索词的顺序匹配，此外还支持用 NEAR 之类的语法来做精确检索，具体参见：搜索技巧 。通常默认值为 no 但是 title 和 body 型字段默认则为 yes 。值得注意的是该功能仅支持默认分词器，如非必要请勿开启此项， 因为这会增加索引数据的大小。
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Non_bool')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-non_bool" class="form-control selectpicker" name="row[non_bool]">
+                {foreach name="nonBoolList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.non_bool"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+            <div class="alert alert-warning-light" style="margin-top:5px;">
+                布尔索引不参与权重排名计算，默认情况下所有自定义分词器的字段均为布尔索引。因此， 当您使用自定义分词器却又想让本字段参与权重计算的话，请将本项设为 yes。
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Sortable')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input  id="c-sortable" name="row[sortable]" type="hidden" value="1">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-sortable" data-yes="1" data-no="0" >
+                <i class="fa fa-toggle-on text-success {eq name="$row.sortable" value="0"}fa-flip-horizontal text-gray{/eq} fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Extra')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input  id="c-extra" name="row[extra]" type="hidden" value="{$row.extra}">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-extra" data-yes="1" data-no="0" >
+                <i class="fa fa-toggle-on text-success {eq name="$row.extra" value="0"}fa-flip-horizontal text-gray{/eq} fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <div class="radio">
+            {foreach name="statusList" item="vo"}
+            <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="$row.status"}checked{/in} /> {$vo}</label>
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-primary btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

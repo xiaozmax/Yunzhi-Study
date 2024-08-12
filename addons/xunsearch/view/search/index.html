@@ -1,0 +1,24 @@
+<div class="container">
+    <form class="form-search pt-2" id="search-form" method="get" data-project="{$project.name|htmlentities}" data-suggestion="{:addon_url('xunsearch/index/suggestion')}" style="margin-top:120px;">
+        <input type="hidden" name="name" value="{$project.name|htmlentities}" />
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3" id="q-input">
+                <div class="text-center" style="margin-bottom:30px;"><img src="{$project.logo|cdnurl}" style="width:100px;" alt=""></div>
+                <div class="input-group">
+                    <input type="search" class="search-query form-control" name="q" title="输入任意关键词皆可搜索" value="">
+                    <span class="input-group-btn">
+                            <button class="btn btn-primary ml-2" type="submit" style="border-radius:2px;padding:6px 30px;">搜索</button>
+                    </span>
+                </div>
+                {if $project['isindexhotwords']}
+                <div class="text-center mt-4">
+                    热门搜索：
+                    {foreach name="hot" id="item" key="word"}
+                    <span><a href="?q={$word|urlencode}">{$word|htmlentities}</a></span>
+                    {/foreach}
+                </div>
+                {/if}
+            </div>
+        </div>
+    </form>
+</div>

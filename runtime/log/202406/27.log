@@ -1,0 +1,1108 @@
+---------------------------------------------------------------
+[ 2024-06-27T20:35:23+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/
+[运行时间：0.100684s] [吞吐率：9.93req/s] [内存消耗：3,315.68kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005222s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001072s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000046s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top:56789/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002620s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.003317s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/index_new.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:35:24+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/favicon.ico
+[运行时间：0.037386s] [吞吐率：26.75req/s] [内存消耗：1,459.19kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000080s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002564s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001100s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000049s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top:6789/',
+  'accept' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:39:30+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/index/about.html
+[运行时间：0.077764s] [吞吐率：12.86req/s] [内存消耗：3,310.59kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002473s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001018s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000051s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'about',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wuliji01.xiaozmax.top:6789/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002474s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000194s ]
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->about[ /www/wwwroot/code/application/index/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/code/public/../application/index/view/index/about_new.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'sitename',
+  4 => 'secsitename',
+  5 => 'message',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:39:36+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.043140s] [吞吐率：23.18req/s] [内存消耗：1,691.18kb] [文件加载：57]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002238s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000871s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000047s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002355s ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]Namespace declaration statement has to be the very first statement or after any declare call in the script[/www/wwwroot/code/application/index/controller/Race.php:3]
+---------------------------------------------------------------
+[ 2024-06-27T20:39:50+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.658709s] [吞吐率：1.52req/s] [内存消耗：3,301.24kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000063s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002170s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000856s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002278s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000163s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_get_contents(https://huodong.ncet.edu.cn/hd/dnds/list?libraryId=f5fc6559-69af-44d4-a621-6dc3a5a372e2): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[/www/wwwroot/code/application/index/controller/Race.php:17]
+---------------------------------------------------------------
+[ 2024-06-27T20:40:10+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.397756s] [吞吐率：2.51req/s] [内存消耗：3,301.05kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000073s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002298s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000938s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000050s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002363s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000180s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_get_contents(https://huodong.ncet.edu.cn/hd/dnds/list): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+[/www/wwwroot/code/application/index/controller/Race.php:17]
+---------------------------------------------------------------
+[ 2024-06-27T20:41:32+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.270196s] [吞吐率：3.70req/s] [内存消耗：3,236.58kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002283s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000899s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002447s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000165s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:41:44+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.269098s] [吞吐率：3.72req/s] [内存消耗：3,236.65kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002509s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000988s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000048s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002378s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000160s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:43:01+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.245398s] [吞吐率：4.08req/s] [内存消耗：3,237.09kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002199s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000891s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000057s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002356s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000183s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:43:07+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.170019s] [吞吐率：5.88req/s] [内存消耗：3,237.09kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000076s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002643s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001070s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000056s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002761s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000234s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:43:31+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.169086s] [吞吐率：5.91req/s] [内存消耗：3,237.15kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000086s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003058s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001107s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000069s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002782s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000163s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:43:43+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.164862s] [吞吐率：6.07req/s] [内存消耗：3,237.12kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002215s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000938s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002252s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000355s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:00+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.181559s] [吞吐率：5.51req/s] [内存消耗：3,237.25kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000067s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002101s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001018s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000045s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.004846s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000173s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:06+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.164882s] [吞吐率：6.06req/s] [内存消耗：3,237.21kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002587s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001043s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000052s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002699s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000170s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:13+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.167816s] [吞吐率：5.96req/s] [内存消耗：3,237.21kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002289s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000918s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000047s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002715s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000191s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:20+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.172625s] [吞吐率：5.79req/s] [内存消耗：3,237.24kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000074s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002416s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000947s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000067s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002356s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000170s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:29+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.161899s] [吞吐率：6.18req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002357s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000942s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000061s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002441s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000171s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:37+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.186726s] [吞吐率：5.36req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000096s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003349s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001366s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000076s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003410s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000203s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:41+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.169103s] [吞吐率：5.91req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000080s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002624s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001014s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000050s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002310s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000186s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:45+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.160928s] [吞吐率：6.21req/s] [内存消耗：3,237.27kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000079s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002385s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000934s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000054s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002398s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000177s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:49+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.173957s] [吞吐率：5.75req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002460s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.001027s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000063s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002488s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000187s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:50+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.166697s] [吞吐率：6.00req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002310s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000875s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000050s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002261s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000186s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:44:51+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.156573s] [吞吐率：6.39req/s] [内存消耗：3,237.26kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002172s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000897s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000049s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002288s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000168s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2024-06-27T20:52:48+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.066459s] [吞吐率：15.05req/s] [内存消耗：3,469.93kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002040s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000833s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000039s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002173s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000152s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function app\index\controller\http_data()[/www/wwwroot/code/application/index/controller/Race.php:18]
+---------------------------------------------------------------
+[ 2024-06-27T20:53:01+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.074677s] [吞吐率：13.39req/s] [内存消耗：3,469.56kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002203s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000826s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000046s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003266s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000247s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function app\index\controller\http_data()[/www/wwwroot/code/application/index/controller/Race.php:18]
+---------------------------------------------------------------
+[ 2024-06-27T20:53:20+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.067817s] [吞吐率：14.75req/s] [内存消耗：3,469.76kb] [文件加载：80]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002048s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000791s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000043s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002219s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000194s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类型错误: Too few arguments to function app\index\controller\Race::http_data(), 1 passed in /www/wwwroot/code/application/index/controller/Race.php on line 18 and at least 2 expected[/www/wwwroot/code/application/index/controller/Race.php:24]
+---------------------------------------------------------------
+[ 2024-06-27T20:53:29+08:00 ] 113.222.226.132 GET wuliji01.xiaozmax.top:6789/index/race
+[运行时间：0.249348s] [吞吐率：4.01req/s] [内存消耗：3,247.64kb] [文件加载：77]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002301s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_init [ RunTime:0.000907s ]
+[ info ] [ LANG ] /www/wwwroot/code/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000067s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'race',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga_Y5DFN9DCWC=GS1.1.1708255990.1.0.1708255990.0.0.0; _ga=GA1.2.2071679804.1708255990; Qs_lvt_383843=1710643478; Qs_pv_383843=733709402420457100; order=id%20desc; serverType=nginx; sites_path=/www/wwwroot; site_model=php; pro_end=-1; ltd_end=-1; db_page_model=mysql; backup_path=/www/backup; yunzhitecnuid=69; yunzhitecntoken=e1eaaa1f-9f71-433c-81b9-c5080be0148e; username=admin; login=1; __gads=ID=7bd0f64b084577f6:T=1706666249:RT=1718959156:S=ALNI_MbCInmKXWohg1IBSfqfnDLc0Zb_tA; __gpi=UID=00000cf44adb235a:T=1706666249:RT=1718959156:S=ALNI_MY0owTL-Ycba5WMw8oetFro0CNMtg; __eoi=ID=18024d3687bc2a53:T=1706666249:RT=1718959156:S=AA-Afjb71n_J7x6hqDrfqy2Y6PNB; think_lang=zh-cn; PHPSESSID=1b33d2296c5f836d36b69608744105a1; sess_key=00328acc643d0f558edf4c3642bf2d61; 623eac62931f7a00dc6f5aadbb998f74=a78ac807-10ad-4d9d-9346-f95ba4818b56.fkiIHMtocSuPwraii7GG0-rV_G4; bt_user_info=%7B%22status%22%3Atrue%2C%22msg%22%3A%22%u83B7%u53D6%u6210%u529F%21%22%2C%22data%22%3A%7B%22username%22%3A%22178****4785%22%7D%7D; rank=list; file_recycle_status=true; Path=/www/wwwroot/code/application/index/controller',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'wuliji01.xiaozmax.top:6789',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/code/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002335s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\ueditor\Ueditor @config_init [ RunTime:0.000170s ]
+[ info ] [ RUN ] app\index\controller\Race->index[ /www/wwwroot/code/application/index/controller/Race.php ]
+[ info ] [ LOG ] INIT File

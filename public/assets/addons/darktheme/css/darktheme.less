@@ -1,0 +1,791 @@
+@import "../../../../public/assets/less/bootstrap-less/mixins.less";
+@import "../../../../public/assets/less/bootstrap-less/variables.less";
+@import "../../../../public/assets/less/fastadmin/variables.less";
+@import "../../../../public/assets/less/fastadmin/mixins.less";
+
+@bgcolor: #262626;
+@fontcolor: #ccc;
+@lightenbgcolor: lighten(@bgcolor, 10%);
+@tablebordercolor: #2a2a2a;
+
+@primary: #4e73df;
+@sidebar-dark-bg: darken(@bgcolor, 10%);
+@sidebar-dark-submenu-bg: darken(@bgcolor, 5%);
+
+:root {
+    --bgcolor: @bgcolor;
+    --lightenbgcolor: @lightenbgcolor;
+    --fontcolor: @fontcolor;
+}
+
+.scrollbars(@size, @foreground-color, @background-color) {
+    &::-webkit-scrollbar {
+        width: @size;
+        height: @size;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: @foreground-color;
+    }
+    &::-webkit-scrollbar-track {
+        background: @background-color;
+    }
+
+    scrollbar-color: @foreground-color @background-color;
+}
+
+
+body.darktheme {
+    background-color: @bgcolor;
+    color: @fontcolor;
+
+    #toast-container > div, #toast-container > div:hover {
+        box-shadow: none;
+    }
+
+    hr {
+        border-top-color: @bgcolor;
+    }
+
+    .autocontent .autocontent-caret {
+        background-color: @bgcolor;
+        color: @fontcolor;
+    }
+
+    .breadcrumb {
+        background: @lightenbgcolor;
+    }
+
+    .nav-pills > li > a {
+        color: @fontcolor;
+    }
+
+    .nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
+        background-color: @lightenbgcolor;
+    }
+
+    .pager li > a, .pager li > span {
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+    }
+
+    .pager .disabled > a, .pager .disabled > a:hover, .pager .disabled > a:focus, .pager .disabled > span {
+        background-color: @lightenbgcolor;
+    }
+
+    .jumbotron {
+        background-color: @lightenbgcolor;
+    }
+
+    .panel-footer {
+        border-top-color: @lightenbgcolor;
+        background-color: @lightenbgcolor;
+    }
+
+    a.list-group-item, button.list-group-item {
+        color: @fontcolor;
+    }
+
+    a.list-group-item .list-group-item-heading, button.list-group-item .list-group-item-heading {
+        color: #eee;
+    }
+
+    .page-header {
+        border-bottom-color: @lightenbgcolor;
+    }
+
+    .progress {
+        background-color: lighten(@lightenbgcolor, 10%);
+    }
+
+    .nav-tabs {
+        border-color: @lightenbgcolor;
+
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+            background-color: @lightenbgcolor;
+            border-color: @lightenbgcolor;
+            color: @fontcolor;
+        }
+
+        > li > a:hover {
+            background-color: @bgcolor;
+            border-color: @bgcolor;
+            color: @fontcolor;
+        }
+    }
+
+    .main-header .navbar {
+        background-color: @lightenbgcolor;
+
+        .nav > li > a {
+            color: #aaa;
+        }
+    }
+
+    .alert-info-light {
+        background-color: #274557;
+        border-color: #274557;
+    }
+
+    .alert-warning-light {
+        background-color: #504b33;
+        border-color: #504b33;
+    }
+
+    .main-header .navbar .sidebar-toggle {
+        color: @fontcolor;
+    }
+
+    .nav-addtabs > li > a {
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .main-header .navbar .nav > li > a:hover, .main-header .navbar .nav > li > a:active, .main-header .navbar .nav > li > a:focus, .main-header .navbar .nav .open > a, .main-header .navbar .nav .open > a:hover, .main-header .navbar .nav .open > a:focus, .main-header .navbar .nav > .active > a {
+        background: darken(@lightenbgcolor, 10%);
+        color: @fontcolor;
+    }
+
+    .content-wrapper, .right-side {
+        background-color: #333;
+    }
+
+    .panel {
+        background-color: lighten(@bgcolor, 5%);
+    }
+
+    .panel-intro > .panel-heading {
+        background-color: lighten(@bgcolor, 10%);
+        border-color: lighten(@bgcolor, 10%);
+        color: @fontcolor;
+    }
+
+    .panel-intro > .panel-heading .nav-tabs > li.active > a, .panel-intro > .panel-heading .nav-tabs > li.active > a:hover, .panel-intro > .panel-heading .nav-tabs > li.active > a:focus {
+        background-color: #333;
+        border-color: #333;
+        color: @fontcolor;
+    }
+
+    .panel-intro > .panel-heading .nav-tabs > li > a {
+        background-color: @bgcolor;
+        border-color: @bgcolor;
+    }
+
+    .table > thead > tr > th {
+        border-bottom-color: @tablebordercolor;
+    }
+
+    .table-striped tbody > tr:nth-of-type(2n+1) {
+        background-color: darken(@lightenbgcolor, 2%);
+    }
+
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-top: 1px solid #363636;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border-color: @tablebordercolor;
+    }
+
+    .table-bordered {
+        border-color: @tablebordercolor;
+    }
+
+    .fixed-table-loading {
+        background-color: @bgcolor;
+        border-color: #000;
+    }
+
+    .table-hover > tbody > tr:hover {
+        background-color: @lightenbgcolor;
+    }
+
+    .fixed-table-container tbody .selected td {
+        background-color: #363d4f;
+    }
+
+    .fixed-columns, .fixed-columns-right {
+        background-color: lighten(@bgcolor, 5%);
+        box-shadow: -1px 0 8px rgba(0, 0, 0, 0.18);
+    }
+
+    .pagination > li > a {
+        background: @bgcolor;
+        border-color: @bgcolor;
+
+        &:hover {
+            color: #344;
+        }
+    }
+
+    .bootstrap-tagsinput {
+        background-color: #3c3e3d;
+        border-color: #444;
+    }
+
+    .form-control {
+        background-color: #3c3e3d;
+        border-color: #444;
+        color: #eee;
+    }
+
+    .city-picker-span {
+
+        background-color: #3c3e3d;
+        border-color: #444;
+        color: #eee;
+
+        > .title > span {
+            color: @fontcolor;
+        }
+    }
+
+    .city-select-tab > a {
+        border-color: lighten(#3c3e3d, 10%);
+        color: @fontcolor;
+
+        &.active {
+            background-color: lighten(#3c3e3d, 10%);
+        }
+    }
+
+    .city-select-content {
+
+        background-color: lighten(#3c3e3d, 10%);
+        color: #eee;
+
+        .city-select a {
+            color: @fontcolor;
+
+            &:hover, &:focus {
+                background-color: @lightenbgcolor;
+            }
+        }
+    }
+
+    .city-select-tab {
+
+        background-color: #3c3e3d;
+        border-color: #444;
+        color: #eee;
+    }
+
+    .daterangepicker {
+        background-color: lighten(#3c3e3d, 10%);
+    }
+
+    .ranges li, .daterangepicker .calendar-table {
+
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+        color: @fontcolor;
+    }
+
+    .mockup-bg {
+        background-color: @bgcolor;
+    }
+
+    .sm-st, .stores {
+        background: @bgcolor !important;
+    }
+
+    .daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+
+        background-color: lighten(#3c3e3d, 5%);
+    }
+
+    .daterangepicker td.in-range {
+
+        background-color: lighten(#3c3e3d, 10%);
+        color: @fontcolor;
+    }
+
+    .bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+        border-top-color: lighten(#3c3e3d, 5%);
+    }
+
+    .input-group .input-group-addon {
+        background-color: #3c3e3d;
+        border-color: #444;
+        color: #eee;
+    }
+
+    .sp_result_area, .sp_results {
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+
+        > li {
+            color: @fontcolor;
+
+            &.sp_selected {
+                background-color: darken(@lightenbgcolor, 5%);
+            }
+        }
+    }
+
+    div.sp_result_area div.sp_pagination > ul > li > a {
+        background-color: @lightenbgcolor;
+        color: @fontcolor;
+
+        &:hover {
+            color: lighten(@fontcolor, 10%);
+            background-color: darken(@lightenbgcolor, 10%);
+        }
+    }
+
+    div.sp_result_area div.sp_pagination > ul > li.pageInfoBox > a {
+        color: @fontcolor;
+    }
+
+    div.sp_result_area div.sp_pagination > ul > li.disabled > a {
+        color: darken(@fontcolor, 20%);
+
+        &:hover {
+            color: darken(@fontcolor, 20%);
+            background-color: inherit;
+        }
+    }
+
+    .sp_control_box button {
+        color: @fontcolor;
+    }
+
+    .sp_control_box:hover {
+        background-color: @bgcolor;
+    }
+
+    .sp_control_box:hover button {
+        background-color: @bgcolor;
+        opacity: 1;
+    }
+
+    .sp_control_box:hover button:hover {
+        background-color: @bgcolor;
+        color: black;
+    }
+
+    div.sp_container_combo {
+
+        background-color: #3c3e3d;
+        border-color: #444;
+    }
+
+    ul.sp_element_box li.selected_tag {
+        background-color: dodgerblue;
+        color: #fff;
+        box-shadow: none;
+        border: none;
+    }
+
+    .thumbnail {
+        background-color: #888;
+        border-color: #444;
+    }
+
+    .btn-default {
+        background-color: #888;
+        border-color: #444;
+    }
+
+    .dropdown {
+        .btn-default, .btn-default:hover {
+
+            background-color: #3c3e3d;
+            border-color: #444;
+            color: @fontcolor;
+        }
+
+
+    }
+
+    .dropdown-menu {
+        background-color: @lightenbgcolor;
+        color: @fontcolor;
+
+        > .divider {
+            background-color: lighten(@lightenbgcolor, 15%);
+        }
+
+        > li > a {
+            color: @fontcolor;
+
+            &:hover {
+                color: lighten(@fontcolor, 10%);
+                background-color: lighten(@lightenbgcolor, 10%);
+            }
+        }
+    }
+
+    &.is-dialog {
+        background-color: @bgcolor;
+
+        #main {
+            background-color: @bgcolor;
+        }
+    }
+
+    .layui-layer-load {
+        background-color: @bgcolor;
+    }
+
+    .layui-layer-fast .layui-layer-footer, .layui-layer-fast .layui-layer-btn {
+        background-color: #2b2d32;
+    }
+
+    .layui-layer {
+        background-color: lighten(@bgcolor, 5%);
+    }
+
+    .layui-layer-fast .layui-layer-title {
+        background-color: darken(@bgcolor, 8%) !important;
+    }
+
+    .layui-layer-prompt .layui-layer-input {
+        background-color: #3c3e3d;
+        border-color: #444;
+        color: #eee;
+    }
+
+    .text-primary {
+        color: @fontcolor;
+    }
+
+    a.title {
+        color: #47a0f2;
+    }
+
+    legend {
+        color: @fontcolor;
+    }
+
+    canvas {
+        filter: invert(1) hue-rotate(180deg);
+    }
+
+    .popover {
+
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+    }
+
+    .popover.top > .arrow:after {
+
+        border-top-color: @lightenbgcolor;
+    }
+
+    .list-group-item {
+        background-color: @lightenbgcolor;
+        border-color: @tablebordercolor;
+    }
+
+    @media (max-width: 991px) {
+        .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+            border-color: @lightenbgcolor;
+            background-color: @lightenbgcolor;
+            box-shadow: none;
+        }
+    }
+    .scrollbars(9px, #999, #333);
+
+    div, ul, textarea {
+        .scrollbars(9px, #666, #333);
+    }
+
+    &.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
+        border-left-color: @bgcolor;
+    }
+
+    .well, .box {
+
+        background-color: darken(@lightenbgcolor, 2%);
+        border-color: darken(@lightenbgcolor, 2%);
+    }
+
+    #secondnav {
+        background-color: lighten(@lightenbgcolor, 5%);
+
+        .nav-addtabs > li {
+            background-color: lighten(@bgcolor, 20%);
+            border-color: lighten(@bgcolor, 20%);
+            color: @fontcolor;
+
+            > a {
+                color: @fontcolor !important;
+
+                &:hover {
+
+                    color: lighten(@fontcolor, 20%) !important;
+                }
+            }
+
+            &.active {
+
+                background-color: lighten(@bgcolor, 10%);
+                border-color: lighten(@bgcolor, 10%);
+
+                > a {
+                    color: lighten(@fontcolor, 20%) !important;
+                }
+            }
+        }
+    }
+
+    .system-message {
+        background-color: @lightenbgcolor;
+
+        h1 {
+            color: @fontcolor;
+        }
+    }
+
+    .wipecache li a {
+        color: @fontcolor !important;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > .user-body a {
+        background-color: @tablebordercolor !important;
+        color: @fontcolor !important;
+    }
+
+    .navbar-nav > .user-menu > .dropdown-menu > {
+        .user-body {
+            background-color: @tablebordercolor;
+            border-color: @tablebordercolor;
+            border-radius: 0;
+        }
+
+        .user-footer {
+            background-color: darken(@lightenbgcolor, 5%);
+            border-color: darken(@lightenbgcolor, 5%);
+        }
+    }
+
+    .control-sidebar-dark, .control-sidebar-dark + .control-sidebar-bg {
+        background-color: @bgcolor;
+    }
+
+    #configbody h2 {
+        border-bottom-color: lighten(@lightenbgcolor, 10%);
+    }
+
+    .exception .source-code {
+        background-color: @bgcolor;
+    }
+
+    .panel-statistics h3 {
+        color: @fontcolor;
+    }
+
+    .panel-default {
+
+        border-color: @lightenbgcolor;
+        color: @fontcolor;
+    }
+
+    .panel-default > .panel-heading {
+
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+    }
+
+    // 边栏
+    .main-header {
+        background: @sidebar-dark-bg;
+
+        .navbar {
+
+            .navbar-nav {
+                > li > a {
+                    border-right: none;
+                }
+            }
+
+            .navbar-custom-menu .navbar-nav, .navbar-right {
+                > li {
+                    > a {
+                        border-left: none;
+                        border-right-width: 0;
+                    }
+                }
+            }
+
+            @media (max-width: @screen-header-collapse) {
+                .navbar-variant(darken(@bgcolor, 10%), #fff);
+            }
+        }
+
+        .logo {
+            .logo-variant(@sidebar-dark-bg; #fff);
+            border-right: 1px solid @sidebar-dark-bg;
+            @media (max-width: @screen-header-collapse) {
+                .logo-variant(darken(@bgcolor, 10%), #fff);
+                border-right: none;
+            }
+        }
+
+        li.user-header {
+            background-color: @sidebar-dark-bg;
+        }
+
+        .nav-addtabs > li > a, .nav-addtabs > li.active > a {
+            border-right-color: transparent;
+        }
+
+    }
+
+    .content-header {
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .skin-dark-sidebar(#fff);
+
+    .treeview-menu {
+        > li {
+            > a {
+                padding-left: 18px;
+            }
+
+            &.active > a {
+                background-color: @primary;
+            }
+        }
+    }
+
+    .sidebar-menu {
+        > li {
+
+            > a {
+                //border-left: 3px solid transparent;
+            }
+
+            &.active > a {
+                color: @sidebar-dark-hover-color;
+                background: @primary;
+                border-left-color: @primary;
+            }
+
+            &:hover > a {
+                border-left-color: transparent;
+            }
+        }
+
+        li.treeview > a {
+            background: transparent;
+            border-left-color: transparent;
+        }
+
+        li.treeview {
+            &.active > a, &.treeview-open > a {
+                background-color: @sidebar-dark-submenu-bg;
+                border-left-color: @sidebar-dark-submenu-bg;
+            }
+        }
+
+        .treeview-menu {
+            padding-left: 0;
+
+            .treeview-menu {
+                padding-left: 0;
+
+                > li > a {
+                    padding-left: 30px;
+                }
+            }
+
+            li.treeview > a {
+                background: transparent;
+                border-left-color: transparent;
+            }
+        }
+    }
+
+    &.sidebar-collapse {
+
+        .sidebar-menu {
+            li:hover > a, li.active > a {
+                color: @sidebar-dark-hover-color;
+                background: @primary;
+            }
+
+            .treeview-menu {
+                li.active > a {
+                    color: @sidebar-dark-hover-color;
+                    background: @primary;
+                }
+
+                li.treeview > a {
+                    background: transparent;
+                    border-left-color: transparent;
+                }
+            }
+        }
+    }
+
+    &.multiplenav {
+        @media (max-width: @screen-header-collapse) {
+            .sidebar .mobilenav a.btn-app {
+                background: lighten(@sidebar-dark-bg, 10%);
+                color: #fff;
+
+                &.active {
+                    background: @primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .box-comments {
+        background-color: @tablebordercolor;
+    }
+
+    .nav-tabs-custom {
+        background-color: @bgcolor;
+
+        > .nav-tabs > li > a, > .nav-tabs > li.header {
+            color: @fontcolor;
+        }
+    }
+
+    .nav-tabs-custom > .tab-content {
+        background-color: @lightenbgcolor;
+    }
+
+    .box-header {
+        color: @fontcolor;
+    }
+
+    .box-header.with-border {
+        border-bottom-color: @lightenbgcolor;
+    }
+
+    .box-footer {
+        background-color: @lightenbgcolor;
+        border-color: @bgcolor;
+    }
+
+    .box-comments .box-comment:first-of-type {
+        border-color: @lightenbgcolor;
+    }
+
+    .box-comments .username, .box-comments .comment-text {
+        color: @fontcolor;
+    }
+
+    .nav-stacked > li > a {
+        color: @fontcolor;
+    }
+
+    .attachment-block {
+        background-color: @lightenbgcolor;
+        border-color: @lightenbgcolor;
+        color: @fontcolor;
+
+        .attachment-text {
+            color: @fontcolor;
+        }
+    }
+
+    .info-box {
+        background-color: @lightenbgcolor;
+    }
+}

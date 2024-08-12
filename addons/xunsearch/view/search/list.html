@@ -1,0 +1,147 @@
+
+<div class="header p-3">
+    <div class="container">
+        <form class="form-search pt-2" id="search-form" data-project="{$project.name|htmlentities}" data-suggestion="{:addon_url('xunsearch/index/suggestion')}" method="get">
+            <input type="hidden" name="name" value="{$project.name|htmlentities}">
+            <input type="hidden" name="order" value="{$order|htmlentities}">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6" id="q-input">
+                    <div class="input-group">
+                        <input type="search" class="search-query form-control" name="q" title="输入任意关键词皆可搜索" value="{$q|htmlentities}">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary ml-2" type="submit" style="border-radius:2px;padding:6px 30px;">搜索</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 mt-2">
+                    <label><input type="radio" name="fulltext" value="0" {:$fulltext?'':'checked'} /> {$fieldColumn[$fieldTitle]}</label>
+                    <label>
+                        <input type="radio" name="fulltext" value="1" {:$fulltext?'checked':''} /> 全文
+                    </label>
+                    {if $project['isfuzzy']}
+                    <label>
+                        <input type="checkbox" name="fuzzy" value="1" {:$fuzzy?'checked':''} /> 模糊搜索
+                    </label>
+                    {/if}
+                    {if $project['issynonyms']}
+                    <label>
+                        <input type="checkbox" name="synonyms" value="1" {:$synonyms?'checked':''} /> 同义词
+                    </label>
+                    {/if}
+                    <span class="dropdown">
+                        <span class="dropdown-toggle" data-toggle="dropdown" href="javascript:">
+                            {:isset($orderList[$order])?$orderList[$order]:$orderList['relevance']} <span class="caret"></span>
+                        </span>
+                        <ul class="dropdown-menu orderlist">
+                            {foreach name="orderList" id="item"}
+                            <li role="presentation"><a role="menuitem" tabindex="-1" data-value="{$key}" href="javascript:">{$item}</a></li>
+                            {/foreach}
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <!-- 开始搜索 -->
+    {if !empty($q)}
+    <div class="search-results">
+
+        <div class="span12">
+            <!-- 搜索状态 -->
+            {if !empty($error)}
+            <p class="text-danger"><strong>错误：</strong>{$error}</p>
+            {else/}
+            <p class="result text-muted">为您找到约 {$count|number_format} 条结果，搜索耗时：{:printf('%.4f', $searchCost);}秒</p>
+            {/if}
+
+            <!-- 搜索建议 -->
+            {if count($corrected) > 0}
+            <div class="search-suggestion">
+                您是不是要找：
+                {foreach name="corrected" id="word"}
+                <span><a href="?q={$word|urlencode}" class="text-danger">{$word|htmlentities}</a></span>
+                {/foreach}
+            </div>
+            {/if}
+
+            <!-- 未找到结果 -->
+            {if $count === 0 && empty($error)}
+            <div class="search-not-found">
+                <p>找不到和 {$q|htmlentities} 相符的内容或信息。</p>
+                <p>建议您：</p>
+                <ul class="list-unstyled">
+                    <li>1.请检查输入字词有无错误。</li>
+                    <li>2.请换用另外的查询字词。</li>
+                    <li>3.请改用较短、较为常见的字词。</li>
+                </ul>
+            </div>
+            {/if}
+
+            <!-- 查询结果 -->
+            <dl class="result-list">
+                {foreach name="docs" id="doc"}
+                <dt>
+                    <h4>
+                        <a href="{:isset($doc['url']) ? $doc['url'] : 'javascript:'}" target="{:isset($doc['url']) ? '_blank' : ''}">
+                            {:$search->highlight(htmlspecialchars($doc[$fieldTitle]))}
+                        </a>
+                    </h4>
+                </dt>
+                <dd>
+                    <div class="description">{:$fulltext ? $search->highlight(htmlspecialchars($doc[$fieldBody])) : htmlspecialchars($doc[$fieldBody])}</div>
+                    <div class="extra">
+                        {foreach name="extraFieldList" id="field"}
+                        {if isset($doc[$field->name]) && $doc[$field->name]!=''}
+                        <span><strong>{:isset($fieldColumn[$field->name])?$fieldColumn[$field->name]:$field['name']}</strong> {$doc[$field->name]}</span>
+                        {/if}
+                        {/foreach}
+                    </div>
+                </dd>
+                {/foreach}
+            </dl>
+
+            <!-- 分页 -->
+            {if !empty($pager)}
+            <div class="pager mb-0" style="text-align:left;">
+                <ul class="pagination">
+                    {$pager}
+                </ul>
+            </div>
+            {/if}
+
+        </div>
+    </div>
+    {/if}
+    <!-- 结束搜索 -->
+</div>
+
+<!-- 热门搜索 -->
+{if count($hot)>0 && $project['ishotwords']}
+<div class="container">
+    <div class="search-links">
+        <h4>热门搜索</h4>
+        <p>
+            {foreach name="hot" id="item" key="word"}
+            <span><a href="?q={$word|urlencode}">{$word|htmlentities}</a></span>
+            {/foreach}
+        </p>
+    </div>
+</div>
+{/if}
+
+<!-- 相关搜索 -->
+{if count($related)>0 && $project['isrelatedwords']}
+<div class="container">
+    <div class="search-links">
+        <h4>相关搜索</h4>
+        <p>
+            {foreach name="related" id="word"}
+            <span><a href="?q={$word|urlencode}">{$word|htmlentities}</a></span>
+            {/foreach}
+        </p>
+    </div>
+</div>
+{/if}
